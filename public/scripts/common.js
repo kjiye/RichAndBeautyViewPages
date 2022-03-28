@@ -6,47 +6,47 @@ const Common = (function($){
 
     // 회원 프로필 이미지 새창 열기
     let profileDetailView = function(){
-        window.open("/RichAndBeautyAdminView/views/account/member/profile_img.html","_blank", "width=650,height=650");
+        window.open("/RichAndBeautyViewPages/views/account/member/profile_img.html","_blank", "width=650,height=650");
     };
 
     // 회원 뱃지 인증내역 상세 새창 열기
     let badgeDetailView = function(){
-        window.open("/RichAndBeautyAdminView/views/account/member/badge.html", "_blank", "width=1200,height=800");
+        window.open("/RichAndBeautyViewPages/views/account/member/badge.html", "_blank", "width=1200,height=800");
     }
 
     // 회원 프로필 심사 새창 열기
     let profileConfirmView = function(){
-        window.open("/RichAndBeautyAdminView/views/account/member/profile.html","_blank", "width=1200,height=800");
+        window.open("/RichAndBeautyViewPages/views/account/member/profile.html","_blank", "width=1200,height=800");
     }
 
     // 회원 본인 인증 상세 새창 열기
     let identificationView = function(){
-        window.open("/RichAndBeautyAdminView/views/account/member/identification.html","_blank", "width=1000,height=800");
+        window.open("/RichAndBeautyViewPages/views/account/member/identification.html","_blank", "width=1000,height=800");
     }
 
     // 회원 직장 인증 상세 새창 열기
     let jobDetailView = function(){
-        window.open("/RichAndBeautyAdminView/views/account/member/job.html","_blank", "width=760,height=800");
+        window.open("/RichAndBeautyViewPages/views/account/member/job.html","_blank", "width=760,height=800");
     }
 
     // 회원 학교 인증 상세 새창 열기
     let academicDetailView = function(){
-        window.open("/RichAndBeautyAdminView/views/account/member/academic.html","_blank", "width=760,height=800");
+        window.open("/RichAndBeautyViewPages/views/account/member/academic.html","_blank", "width=760,height=800");
     }
 
     // 유료 내역 새창 열기
     let paidListView = function(){
-        window.open("/RichAndBeautyAdminView/views/account/member/popup/paid_list.html", "_blank", "width=900,height=800");
+        window.open("/RichAndBeautyViewPages/views/account/member/popup/paid_list.html", "_blank", "width=900,height=800");
     }
 
     // 이용 제한 새창 열기
     let restrictionListView = function(){
-        window.open("/RichAndBeautyAdminView/views/account/member/popup/restriction_list.html","_blank", "width=1200,height=800");
+        window.open("/RichAndBeautyViewPages/views/account/member/popup/restriction_list.html","_blank", "width=1200,height=800");
     }
 
     // 상담 이력 새창 열기
     let counselingListView = function(){
-        window.open("/RichAndBeautyAdminView/views/account/member/popup/counseling_list.html","_blank", "width=900,height=800");
+        window.open("/RichAndBeautyViewPages/views/account/member/popup/counseling_list.html","_blank", "width=900,height=800");
     }
 
     return {
