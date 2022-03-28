@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>문의내역 조회</title>
-    <link rel="stylesheet" href="/public/stylesheets/style.css" />
-    <link rel="stylesheet" href="/public/stylesheets/semantic.min.css" />
+    <link rel="stylesheet" href="../../../public/stylesheets/style.css" />
+    <link rel="stylesheet" href="../../../public/stylesheets/semantic.min.css" />
 
-    <script type="text/javascript" src="/public/scripts/lib/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="/public/scripts/lib/semantic.min.js"></script>
+    <script type="text/javascript" src="../../../public/scripts/lib/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../../../public/scripts/lib/semantic.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.js"></script>
     
-    <script type="text/javascript" src="/public/scripts/common.js"></script>
-    <script type="text/javascript" src="/public/scripts/qna.js"></script>
+    <script type="text/javascript" src="../../../public/scripts/common.js"></script>
+    <script type="text/javascript" src="../../../public/scripts/qna.js"></script>
 </head>
 <body>
     <header id="header" include-html="/views/header.html"></header>
@@ -28,7 +28,7 @@
         <div class="right_floated">
             <button class="ui blue button write_reply">답변작성</button>
             <button class="ui blue button reg_reply none">완료</button>
-            <a href="/views/cs/qna/list.html" class="ui orange button">목록</a>
+            <a href="../../../views/cs/qna/list.html" class="ui orange button">목록</a>
         </div>
     </div>
         <table class="ui definition table">
@@ -78,7 +78,7 @@
     
 </body>
 <script>
-    $("#header").load("/views/header.html");
-    $("#snb").load("/views/nav.html"); 
+    $("#header").load("../../../views/header.html");
+    $("#snb").load("../../../views/nav.html"); 
 </script>
 </html>
