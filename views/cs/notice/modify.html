@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항 조회</title>
+    <link rel="stylesheet" href="/public/stylesheets/style.css" />
+    <link rel="stylesheet" href="/public/stylesheets/semantic.min.css" />
+
+    <script type="text/javascript" src="/public/scripts/lib/editor/js/service/HuskyEZCreator.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/public/scripts/lib/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="/public/scripts/lib/semantic.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.js"></script>
+    
+    <script type="text/javascript" src="/public/scripts/common.js"></script>
+    <script type="text/javascript" src="/public/scripts/qna.js"></script>
+</head>
+<body>
+    <header id="header" include-html="/views/header.html"></header>
+    <nav id="snb" include-html="/views/nav.html"></nav>
+
+    <div id="content">
+        <h3 class="ui header underline">
+            <div class="content">공지사항 조회</div>
+        </h3>        
+    <div class="clear_floated">
+        <div class="right_floated">
+            <button class="ui blue button">완료</button>
+            <a href="/views/cs/qna/list.html" class="ui orange button">목록</a>
+        </div>
+    </div>
+        <table class="ui definition table">
+            <tbody>
+              <tr>
+                <td>제목</td>
+                <td>
+                    <input id="title" type="text" placeholder="제목을 입력해주세요"/>
+                </td>
+              </tr>
+              <tr>
+                <td>내용</td>
+                <td>
+                    <textarea id="editor" rows="10" cols="100"></textarea>
+                </td>
+              </tr>
+          </tbody>
+        </table>           
+    </div>
+</body>
+<script id="smartEditor" type="text/javascript"> 
+	var oEditors = [];
+	nhn.husky.EZCreator.createInIFrame({
+	    oAppRef: oEditors,
+	    elPlaceHolder: "editor",    // textarea id값
+        sSkinURI : "/public/scripts/lib/editor/SmartEditor2Skin.html",
+	    fCreator: "createSEditor2",
+	    htParams : { 
+	    	// 툴바 사용 여부
+	        bUseToolbar : true, 
+		    // 입력창 크기 조절바 사용 여부
+		    bUseVerticalResizer : false, 
+		    // 모드 탭(Editor | HTML | TEXT) 사용 여부
+		    bUseModeChanger : false 
+	    }
+	});
+</script>
+<script>
+    $("#header").load("/views/header.html");
+    $("#snb").load("/views/nav.html"); 
+</script>
+</html>

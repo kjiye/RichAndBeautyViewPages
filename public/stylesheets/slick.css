@@ -1,0 +1,53 @@
+body { padding:2em; }
+
+.js .slider-single > div:nth-child(1n+2) { display: none }
+
+.js .slider-single.slick-initialized > div:nth-child(1n+2) { display: block }
+
+h3 {
+	color: rgb(33, 133, 208);
+	font-size: 2.25rem;
+	margin: .5rem;
+	padding: 2%;
+	position: relative;
+	text-align: center;
+}
+
+h4 {
+    padding-left: 2%;
+}
+
+.slider-single div h3 {
+    min-height:500px;
+    line-height: 500px;
+    background: #ebebeb;
+}
+
+.slider-single h3 {
+	line-height: 10rem;
+}
+
+.slider-nav h3::before {
+	content: "";
+	display: block;
+	padding-top: 75%;
+}
+
+.slider-nav h3 {
+    background: #f0f0f0;
+    border:2px solid #ebebeb;
+}
+
+.slider-nav h3 span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.slider-nav .slick-slide { cursor: pointer; }
+
+.slick-slide.is-active h3 {
+	color: orange;
+	background-color: #fff
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유료 내역</title>
+    <link rel="stylesheet" href="/public/stylesheets/style.css" />
+    <link rel="stylesheet" href="/public/stylesheets/semantic.min.css" />
+</head>
+<body class="popup_container">
+    <div class="ui raised clearing green segment">
+        <div class="ui labeled button" tabindex="0">
+            <div class="ui button">회원명</div>
+            <div class="ui basic label">
+              홍길동
+            </div>
+        </div>
+        <div class="ui labeled button" tabindex="0">
+            <div class="ui button">전화번호</div>
+            <div class="ui basic label">
+              010-1111-1111
+            </div>
+        </div>
+        <h2 class="ui header center">유료 내역</h2>
+        <table class="ui four column table">
+            <tbody>
+              <tr>
+                <td class="light_gray">현재 보유캐시</td>
+                <td>0원</td>
+                <td class="light_gray">실제 총 결제금액</td>
+                <td>329,000원</td>
+              </tr>
+              <tr>
+                <td class="light_gray">누적 충전 캐시</td>
+                <td>240</td>
+                <td class="light_gray">누적 결제금액</td>
+                <td>334,000원</td>
+              </tr>
+              <tr>
+                <td class="light_gray">누적 사용캐시</td>
+                <td>120</td>
+                <td class="light_gray">누적 환불금액</td>
+                <td>5,000원</td>
+              </tr>
+              <tr>
+                <td class="light_gray">캐시 지급/회수</td>
+                <td>300 / 10</td>
+              </tr>
+            </tbody>
+        </table> 
+        <div class="table_container">
+        <table class="ui celled table">
+            <thead>
+              <tr><th>No</th>
+              <th>서비스명</th>
+              <th>상세</th>
+              <th>일시</th>
+              <th>금액</th>
+              <th>수량</th>
+              <th>구분</th>
+            </tr></thead>
+            <tbody>
+              <tr>
+                <td data-label="index">2</td>
+                <td data-label="service">데일리매칭</td>
+                <td data-label="detail">프로필 되돌리기</td>
+                <td data-label="date">2022.02.24 11:00:00</td>
+                <td data-label="payment">150,000원</td>
+                <td data-label="amount">1개</td>
+                <td data-label="type">사용</td>
+              </tr>
+              <tr>
+                <td data-label="index">1</td>
+                <td data-label="service">데일리매칭</td>
+                <td data-label="detail">연락처 교환</td>
+                <td data-label="date">2022.02.24 11:00:00</td>
+                <td data-label="payment">150,000원</td>
+                <td data-label="amount">20개</td>
+                <td data-label="type">사용</td>
+              </tr>              
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+      
+</body>
+</html>

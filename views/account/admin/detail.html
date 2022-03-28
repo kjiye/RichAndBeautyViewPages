@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자 계정 상세</title>
+    <link rel="stylesheet" href="/public/stylesheets/style.css" />
+    <link rel="stylesheet" href="/public/stylesheets/semantic.min.css" />
+
+    <script type="text/javascript" src="/public/scripts/lib/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="/public/scripts/lib/semantic.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.js"></script>
+    
+    <script type="text/javascript" src="/public/scripts/common.js"></script>
+    <script type="text/javascript" src="/public/scripts/qna.js"></script>
+</head>
+<body>
+    <header id="header" include-html="/views/header.html"></header>
+    <nav id="snb" include-html="/views/nav.html"></nav>
+
+    <div id="content">
+        <h3 class="ui header underline">
+            <div class="content">관리자 계정</div>
+        </h3>        
+        <h4 class="ui header">
+            <div class="content">관리자 상세</div>
+            <div class="sub header">관리자 정보 조회 및 변경하는 페이지입니다</div>
+        </h4>
+        <div class="ui horizontal clear_floated">
+            <div class="right_floated">
+                <a class="ui button small green">비밀번호 초기화</a>
+                <a class="ui button small green">정보수정</a>
+                <a class="ui button small">시스템 로그</a>
+                <a class="ui button small">탈퇴</a>
+            </div>
+        </div>
+        <table class="ui eight column table">
+            <tbody>
+              <tr>
+                <td class="light_gray">이름</td>
+                <td>aa</td>
+                <td class="light_gray">전화번호</td>
+                <td>aa</td>
+                <td class="light_gray">ID</td>
+                <td>aa</td>
+                <td class="light_gray">등급</td>
+                <td>aa</td>
+              </tr>
+              <tr>
+                <td class="light_gray">가입일</td>
+                <td>aa</td>
+                <td class="light_gray">탈퇴일</td>
+                <td>aa</td>
+                <td class="light_gray">상태</td>
+                <td>aa</td>
+                <td class="light_gray">최근 접속일시</td>
+                <td>aa</td>
+              </tr>
+            </tbody>
+        </table>        
+    </div>
+ 
+    
+</body>
+<script>
+    $("#header").load("/views/header.html");
+    $("#snb").load("/views/nav.html"); 
+</script>
+</html>
