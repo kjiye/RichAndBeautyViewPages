@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>매치이력 상세보기</title>
+    <link rel="stylesheet" href="../../public/stylesheets/style.css" />
+    <link rel="stylesheet" href="../../public/stylesheets/semantic.min.css" />
+
+    <script type="text/javascript" src="../../public/scripts/lib/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../../public/scripts/lib/semantic.min.js"></script>
+    
+    <script type="text/javascript" src="../../public/scripts/match.js"></script>
+</head>
+<body class="popup_container">
+    <div class="ui raised clearing green segment">
+        <h2 class="ui header center">매치이력 상세 보기</h2>
+        <table class="ui four column table">
+            <tbody>
+              <tr>
+                <td class="light_gray">회원정보</td>
+                <td>
+                  <a class="nickname" href="../../views/account/member/detail.html">홍길동<br>(닉네임)</a>
+                </td>
+                <td class="light_gray">성별/휴대폰번호</td>
+                <td>여/010-1111-1111</td>
+              </tr>
+              <tr>
+                <td class="light_gray">발송 일시</td>
+                <td>2022.03.01 11:13:00</td>
+                <td class="light_gray">보낸 호감</td>
+                <td>LIKE</td>
+              </tr>
+              <tr>
+                <td class="light_gray">검수 여부</td>
+                <td>대기</td>
+              </tr>
+              <tr>
+                <td class="light_gray">누적 사용 다이아</td>
+                <td>300</td>
+                <td class="light_gray">누적 이용정지</td>
+                <td>1</td>                  
+              </tr>
+              <tr>
+                <td class="light_gray">보낸 메세지</td>
+                <td>안녕하세요~</td>
+                <td class="light_gray">대상 회원</td>
+                <td>
+                  <a class="nickname" href="../../views/account/member/detail.html">회원명<br>(닉네임)</a>
+                </td>                
+              </tr>
+              <tr>
+                <td class="light_gray">담당자</td>
+                <td>김지현 (ID)</td>
+                <td class="light_gray">검수 일시</td>
+                <td>-</td>                
+              </tr>              
+            </tbody>
+        </table> 
+        <!-- 경고알림, 이용정지, 정상 버튼 -->
+        <div class="clear_floated">
+            <div class="right_floated">
+                <div class="ui right labeled left icon input error">
+                    <i class="bullhorn red icon"></i>
+                    <input type="text" placeholder="Message">
+                    <button id="warning" class="ui red basic label">
+                      경고 알림
+                    </button>
+                </div>
+                <button id="block" class="ui red button left_margin">이용정지</button>
+                <button id="pass" class="ui green button">정상</button>
+            </div>
+        </div>
+        <div class="ui center aligned basic segment">
+          <div class="ui horizontal divider">
+            <div class="field" placeholder="Last Name">
+              <div class="ui pointing below basic big label">
+                경고 알림 총 <span class="red">23</span>회
+              </div>
+            </div>            
+          </div>
+        </div>        
+
+        <div class="table_container small">
+        <table class="ui celled table">
+          <tbody>
+            <tr>
+              <td class="light_gray">경고<br>알림</td>
+              <td>연락처, SNS와 같은 개인정보를 기재할 알림 경우 서비스 이용이 제한될 수 있습니다</td>
+              <td class="light_gray">담당자</td>
+              <td>담당자 (ID)</td>
+              <td class="light_gray">경고<br>일시</td>
+              <td>2022.03.01 14:51:00</td>              
+            </tr>
+            <tr>
+              <td class="light_gray">경고<br>알림</td>
+              <td>담당자가 입력한 경고 알림 문구 출력되는 곳</td>
+              <td class="light_gray">담당자</td>
+              <td>-</td>
+              <td class="light_gray">경고<br>일시</td>
+              <td>-</td>              
+            </tr>            
+            <tr>
+              <td class="light_gray">경고<br>알림</td>
+              <td>욕설이나 상대를 비방하는 메세지 작성 시 서비스 이용이 제한될 수 있습니다!</td>
+              <td class="light_gray">담당자</td>
+              <td>담당자 (ID)</td>
+              <td class="light_gray">경고<br>일시</td>
+              <td>2022.03.01 14:51:00</td>              
+            </tr>
+            <tr>
+              <td class="light_gray">경고<br>알림</td>
+              <td>욕설이나 상대를 비방하는 메세지 작성 시 서비스 이용이 제한될 수 있습니다!</td>
+              <td class="light_gray">담당자</td>
+              <td>담당자 (ID)</td>
+              <td class="light_gray">경고<br>일시</td>
+              <td>2022.03.01 14:51:00</td>              
+            </tr>            
+          </tbody>
+      </table> 
+      </div>        
+    </div>
+
+      
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신고 조회</title>
+    <link rel="stylesheet" href="../../../public/stylesheets/style.css" />
+    <link rel="stylesheet" href="../../../public/stylesheets/semantic.min.css" />
+
+    <script type="text/javascript" src="../../../public/scripts/lib/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../../../public/scripts/lib/semantic.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.js"></script>
+    
+    <script type="text/javascript" src="../../../public/scripts/common.js"></script>
+    <script type="text/javascript" src="../../../public/scripts/report.js"></script>
+</head>
+<body>
+    <header id="header" include-html="/views/header.html"></header>
+    <nav id="snb" include-html="/views/nav.html"></nav>
+
+    <div id="content">
+        <h3 class="ui header underline">
+            <div class="content">신고 조회</div>
+        </h3>        
+    <div class="clear_floated">
+        <div class="right_floated">
+            <button id="regulation_detail" class="ui blue button">처리</button>
+            <a href="../../../views/cs/report/list.html" class="ui orange button">목록</a>
+        </div>
+    </div>
+    <table class="ui five column structive table">
+        <tbody>
+          <tr>
+            <td class="light_gray">신고자명</td>
+            <td colspan="2">a</td>
+            <td class="light_gray">신고구분</td>
+            <td>신고구분</td>
+          </tr>
+          <tr>
+            <td class="light_gray" rowspan="2">피신고자</td>
+            <td colspan="2">
+                닉네임 (010-1111-1111)
+                <a class="ui mini right floated green inverted icon button" href="../../../views/account/member/detail.html">
+                    <i class="user icon"></i>
+                    프로필
+                </a>
+            </td>
+            <td class="light_gray" rowspan="2">신고사유</td>
+            <td rowspan="2">aa</td>
+          </tr>
+          <tr>
+            <td class="light_gray2">제재횟수</td>
+            <td>
+                1
+                <a href="../../../views/cs/report/regulation.html" class="ui mini right floated green inverted button">상세보기</a>
+            </td>
+          </tr>
+          <tr>
+              <td class="light_gray">신고내용</td>
+              <td colspan="5">-</td>
+          </tr>
+          <tr>
+            <td class="light_gray">내용</td>
+            <!-- 최소 높이 조절 -->
+            <td class="content" colspan="5">
+                <div>
+                    내용이 표시되는 곳 내용이 표시되는 곳 내용이 표시되는 곳 내용이 표시되는 곳
+                </div>
+            </td>
+        </tr>          
+
+
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 신규생성 모달 -->
+    <div class="ui small modal">
+      <i class="close icon"></i>
+      <div class="header">
+        제재 구분
+      </div>
+      <div class="content">
+        <div class="ui form">
+            <div class="grouped fields">
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input type="radio" name="regulation">
+                  <label>영구 정지</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input type="radio" name="regulation">
+                  <label>3일 정지</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input type="radio" name="regulation">
+                  <label>혐의 없음</label>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="actions">
+        <div class="ui black deny button">취소</div>
+        <div id="new_account" class="ui positive right labeled icon button">
+          완료
+          <i class="checkmark icon"></i>
+        </div>
+      </div>
+    </div>     
+    
+</body>
+<script>
+    $("#header").load("../../../views/header.html");
+    $("#snb").load("../../../views/nav.html"); 
+</script>
+</html>

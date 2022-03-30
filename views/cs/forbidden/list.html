@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>금지단어</title>
+    <link rel="stylesheet" href="../../../public/stylesheets/style.css" />
+    <link rel="stylesheet" href="../../../public/stylesheets/semantic.min.css" />
+
+    <script type="text/javascript" src="../../../public/scripts/lib/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../../../public/scripts/lib/semantic.min.js"></script>
+    
+    <script type="text/javascript" src="../../../public/scripts/common.js"></script>
+    <script type="text/javascript" src="../../../public/scripts/forbidden.js"></script>
+</head>
+<body>
+    <header id="header" include-html="/views/header.html"></header>
+    <nav id="snb" include-html="/views/nav.html"></nav>
+
+    <div id="content">
+        <h3 class="ui header underline">
+            <div class="content">금지단어 (12,345건)</div>
+        </h3>
+        
+        <div class="ui horizontal top_gap">
+            <div class="right_floated">
+                <div class="ui selection dropdown right_gap">
+                    <input type="hidden" name="gender">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">구분</div>
+                    <div class="menu">
+                      <div class="item" data-value="0">전체</div>
+                      <div class="item" data-value="1">매칭메세지</div>
+                      <div class="item" data-value="2">커뮤니티</div>
+                      <div class="item" data-value="3">파티</div>
+                    </div>
+                </div>
+                <!-- 
+                <div class="ui floating dropdown labeled basic search icon button">
+                    <i class="filter icon"></i>
+                    <span class="text">검색 필터</span>
+                    <div class="menu">
+                      <div class="item">회원명</div>
+                      <div class="item">휴대폰번호</div>
+                    </div>
+                </div> 
+                -->
+                <div class="ui action input" style="margin-right:0.5em">
+                    <input type="text" placeholder="Keyword">
+                    <button class="ui icon blue button">
+                      <i class="search icon"></i>
+                    </button>
+                </div>
+                <button id="add" class="ui blue button">추가</button>
+                <button class="ui button">삭제</button>
+            </div>
+        </div>
+
+        <table class="ui celled padded table list" style="margin-top:65px;">
+            <thead>
+            <tr>
+              <th class="single line">
+                <div class="ui checked checkbox">
+                    <input type="checkbox" checked>
+                    <label></label>
+                </div>
+              </th>
+              <th>금지단어</th>
+              <th>설정구분</th>
+              <th>등록자</th>
+              <th>등록일</th>
+              <th></th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                    <div class="ui checked checkbox">
+                        <input type="checkbox" checked>
+                        <label></label>
+                    </div>                    
+                </td>
+                <td>공일공</td>
+                <td>
+                    <div class="ui form">
+                        <div class="inline fields">
+                          <div class="field">
+                            <span class="ui basic label">
+                                <i class="square outline large red icon"></i>
+                                전체
+                            </span>
+                          </div>
+                          <div class="field">
+                            <span class="ui basic label">
+                                <i class="check square outline large red icon"></i>
+                                매칭메세지
+                            </span>                                          
+                          </div>
+                          <div class="field">
+                            <span class="ui basic label">
+                                <i class="check square outline large red icon"></i>
+                                파티
+                            </span>                                          
+                          </div>
+                          <div class="field">
+                            <span class="ui basic label">
+                                <i class="square outline large red icon"></i>
+                                커뮤니티
+                            </span>                                          
+                          </div>
+                        </div>
+                    </div>
+                </td>
+                <td>정다은 (ID)</td>
+                <td>2022.03.01 11:12:00</td>
+                <td>
+                    <button class="ui green tiny inverted button modify">수정</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <div class="ui checked checkbox">
+                        <input type="checkbox" checked>
+                        <label></label>
+                    </div>                    
+                </td>
+                <td>공일공</td>
+                <td>
+                    <div class="ui form">
+                        <div class="inline fields">
+                          <div class="field">
+                            <span class="ui basic label">
+                                <i class="square outline large red icon"></i>
+                                전체
+                            </span>
+                          </div>
+                          <div class="field">
+                            <span class="ui basic label">
+                                <i class="check square outline large red icon"></i>
+                                매칭메세지
+                            </span>                                          
+                          </div>
+                          <div class="field">
+                            <span class="ui basic label">
+                                <i class="check square outline large red icon"></i>
+                                파티
+                            </span>                                          
+                          </div>
+                          <div class="field">
+                            <span class="ui basic label">
+                                <i class="square outline large red icon"></i>
+                                커뮤니티
+                            </span>                                          
+                          </div>
+                        </div>
+                    </div>
+                </td>
+                <td>정다은 (ID)</td>
+                <td>2022.03.01 11:12:00</td>
+                <td>
+                    <button class="ui green tiny inverted button modify">수정</button>
+                </td>
+              </tr>              
+            </tbody>
+            <!-- pagination -->
+            <tfoot>
+                <tr>
+                    <th colspan="12">
+                        <div class="ui right floated pagination menu">
+                            <a class="icon item">
+                                <i class="left chevron icon"></i>
+                            </a>
+                            <a class="item">1</a>
+                            <a class="item">2</a>
+                            <a class="item">3</a>
+                            <a class="item">4</a>
+                            <a class="icon item">
+                                <i class="right chevron icon"></i>
+                            </a>
+                        </div>
+                    </th>
+                </tr>
+            </tfoot>
+          </table>
+    </div>
+    <!-- 추가 수정 모달 -->
+    <div class="ui small modal">
+        <i class="close icon"></i>
+        <div class="header">
+          금지단어 관리
+        </div>
+
+        <div class="content">
+            <div class="description">
+                <h4 class="ui header">금지단어 추가</h4>
+            </div>                    
+            <div class="ui fluid icon input top_gap">
+                <input type="text" placeholder="금지단어를 입력해주세요" value="">
+            </div>
+        </div>
+        <div class="content">
+            <div class="description">
+                <h4 class="ui header">적용 위치</h4>
+            </div>
+            <div class="ui form">
+                <div class="inline fields">
+                  <div class="field">
+                    <div class="ui radio checkbox">
+                      <input type="radio" name="all">
+                      <label>전체</label>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="ui radio checkbox">
+                      <input type="radio" name="match" checked>
+                      <label>매칭메세지</label>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="ui radio checkbox">
+                      <input type="radio" name="party" checked>
+                      <label>파티</label>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="ui radio checkbox">
+                      <input type="radio" name="community">
+                      <label>커뮤니티</label>
+                    </div>
+                  </div>
+                </div>
+            </div>            
+        </div>
+
+        <div class="actions">
+          <div class="ui black deny button">취소</div>
+          <div id="new_account" class="ui positive right labeled icon button">
+            등록
+            <i class="checkmark icon"></i>
+          </div>
+        </div>
+      </div>         
+    
+</body>
+<script>
+    $("#header").load("../../../views/header.html");
+    $("#snb").load("../../../views/nav.html"); 
+</script>
+</html>

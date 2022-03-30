@@ -12,6 +12,7 @@
     <script type="text/javascript" src="../../../public/scripts/lib/semantic.min.js"></script>
     
     <script type="text/javascript" src="../../../public/scripts/common.js"></script>
+    <script type="text/javascript" src="../../../public/scripts/admin.js"></script>
 </head>
 <body>
     <header id="header" include-html="/views/header.html"></header>
@@ -24,7 +25,7 @@
 
         <div class="clear_floated">
             <div class="right_floated">
-                <a class="ui blue button">신규생성</a>
+                <a id="input_modal" class="ui blue button">신규생성</a>
             </div>
         </div>
         <table id="admin_table" class="ui very basic celled table">
@@ -205,6 +206,50 @@
           </table>
 
     </div>
+
+    <!-- 신규생성 모달 -->
+    <div class="ui small modal">
+      <i class="close icon"></i>
+      <div class="header">
+        관리자 계정 신규 생성
+      </div>
+      <div class="content">
+        <div class="ui labeled fluid input">
+          <div class="ui label">이름</div>
+          <input type="text">
+        </div><br>
+        <div class="ui labeled fluid input">
+          <div class="ui label">휴대폰번호</div>
+          <input type="text" placeholder="xxx-xxxx-xxxx">
+        </div><br>
+        <div class="ui labeled fluid input">
+          <div class="ui label">아이디</div>
+          <input type="text" placeholder="영문, 숫자">
+        </div><br>
+        <div class="ui fluid dropdown labeled search icon button">
+          <i class="user circle icon"></i>
+          <span class="text">등급 지정</span>
+          <div class="menu">
+            <div class="item">2 관리자</div>
+            <div class="item">3 직원</div>
+            <div class="item">4 아르바이트</div>
+          </div>
+        </div><br>
+
+        <div class="description">
+          <div class="ui success message">
+            <p>신규계정의 비밀번호는 초기 비밀번호로 자동 생성됩니다</p>
+          </div>
+        </div>
+      </div>
+      <div class="actions">
+        <div class="ui black deny button">취소</div>
+        <div id="new_account" class="ui positive right labeled icon button">
+          생성하기
+          <i class="checkmark icon"></i>
+        </div>
+      </div>
+    </div>    
     
 </body>
 <script>

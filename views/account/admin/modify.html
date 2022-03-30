@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>관리자 계정 상세</title>
+    <title>관리자 정보 수정</title>
     <link rel="stylesheet" href="../../../public/stylesheets/style.css" />
     <link rel="stylesheet" href="../../../public/stylesheets/semantic.min.css" />
 
@@ -21,28 +21,41 @@
 
     <div id="content">
         <h3 class="ui header underline">
-            <div class="content">관리자 상세</div>
-            <!-- <div class="sub header">관리자 정보 조회 및 변경하는 페이지입니다</div> -->
+            <div class="content">관리자 정보 수정</div>
+            <!-- <div class="sub header">관리자 정보를 수정하는 페이지입니다</div> -->
         </h3>        
-        <div class="ui horizontal clear_floated">
-            <div class="right_floated">
-                <button id="reset_password" class="ui button small green">비밀번호 초기화</button>
-                <a href="../admin/modify.html" class="ui button small green">정보수정</a>
-                <a href="../admin/log.html" class="ui button small">시스템 로그</a>
-                <button id="withdrawal" class="ui button small">탈퇴</button>
-            </div>
-        </div>
+
         <table class="ui eight column table">
             <tbody>
               <tr>
+                <!-- 이름, 전화번호 input  -->
                 <td class="light_gray">이름</td>
-                <td>aa</td>
-                <td class="light_gray">전화번호</td>
-                <td>aa</td>
+                <td>
+                    <div class="ui input">
+                        <input type="text" placeholder="이름" value="홍길동">
+                    </div>                    
+                </td>
+                <td class="light_gray">휴대폰번호</td>
+                <td>
+                    <div class="ui input">
+                        <input type="text" placeholder="휴대폰번호" value="010-1111-1111">
+                    </div>                    
+                </td>
                 <td class="light_gray">ID</td>
                 <td>aa</td>
+                <!-- dropdown -->
                 <td class="light_gray">등급</td>
-                <td>aa</td>
+                <td>
+                    <div class="ui dropdown">
+                        <div class="text">선택</div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                          <div class="item">2 관리자</div>
+                          <div class="item">3 직원</div>
+                          <div class="item">4 아르바이트</div>
+                        </div>
+                      </div>                    
+                </td>
               </tr>
               <tr>
                 <td class="light_gray">가입일</td>
@@ -55,7 +68,8 @@
                 <td>aa</td>
               </tr>
             </tbody>
-        </table>        
+        </table>
+        <button id="modify" class="ui right floated green button">수정 완료</button>
     </div>
  
     

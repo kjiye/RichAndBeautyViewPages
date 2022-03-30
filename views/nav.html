@@ -11,7 +11,7 @@
       </div>
       <div class="extra content">
           <div class="ui two buttons">
-              <div class="ui blue button">INFO</div>
+              <a href="/RichAndBeautyViewPages/views/info/reset_password.html" class="ui blue button">INFO</a>
               <div class="or"></div>
               <div class="ui grey button">LOGOUT</div>
           </div>
@@ -45,9 +45,12 @@
       <div class="content">
         <div class="ui form">
           <div class="grouped fields">
-            <a href="/RichAndBeautyViewPages/views/certification/list.html" class="nav_btn">
-              인증/심사 관리
+            <a href="/RichAndBeautyViewPages/views/certification/pending.html" class="nav_btn">
+              대기
             </a>
+            <a href="/RichAndBeautyViewPages/views/certification/rejection.html" class="nav_btn">
+              부결
+            </a>            
           </div>
         </div>
       </div>
@@ -61,12 +64,9 @@
       <div class="content">
         <div class="ui form">
           <div class="grouped fields">
-            <div class="field">
-                <label>Menu1</label>
-            </div>
-            <div class="field">
-                <label>Menu2</label>
-            </div>
+            <a href="/RichAndBeautyViewPages/views/match/list.html" class="nav_btn">
+              매치이력
+            </a>
           </div>
         </div>
       </div>
@@ -80,12 +80,9 @@
       <div class="content">
         <div class="ui form">
           <div class="grouped fields">
-            <div class="field">
-                <label>Menu1</label>
-            </div>
-            <div class="field">
-                <label>Menu2</label>
-            </div>
+            <a href="/RichAndBeautyViewPages/views/party/list.html" class="nav_btn">
+              파티
+            </a>
           </div>
         </div>
       </div>
@@ -99,12 +96,7 @@
       <div class="content">
         <div class="ui form">
           <div class="grouped fields">
-            <div class="field">
-                <label>Menu1</label>
-            </div>
-            <div class="field">
-                <label>Menu2</label>
-            </div>
+            <a href="#" class="nav_btn">menu1</a>
           </div>
         </div>
       </div>
@@ -118,7 +110,7 @@
       <div class="content">
         <div class="ui form">
           <div class="grouped fields">
-            <a href="#" class="nav_btn">
+            <a href="/RichAndBeautyViewPages/views/cs/report/list.html" class="nav_btn">
               신고
             </a>
             <a href="/RichAndBeautyViewPages/views/cs/qna/list.html" class="nav_btn">
@@ -127,7 +119,7 @@
             <a href="/RichAndBeautyViewPages/views/cs/notice/list.html" class="nav_btn">
               공지사항
             </a>
-            <a href="#" class="nav_btn">
+            <a href="/RichAndBeautyViewPages/views/cs/forbidden/list.html" class="nav_btn">
               금지단어
             </a>                           
           </div>
@@ -143,16 +135,69 @@
       <div class="content">
         <div class="ui form">
           <div class="grouped fields">
-            <div class="field">
-                <label>Menu1</label>
-            </div>
-            <div class="field">
-                <label>Menu2</label>
-            </div>
+            <a href="/RichAndBeautyViewPages/views/push/send_push.html" class="nav_btn">PUSH 전송</a>
           </div>
         </div>
       </div>
   </div>
+  <!-- 캐시/쿠폰 -->
+  <div class="item">
+    <a class="title">
+      <i class="dropdown icon"></i>
+      캐시/쿠폰
+    </a>
+    <div class="content">
+      <div class="ui form">
+        <div class="grouped fields">
+          <a href="#" class="nav_btn">캐시 지급/관리</a>
+          <a href="#" class="nav_btn">캐시 내역</a>
+          <a href="#" class="nav_btn">쿠폰 지급/관리</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 유료 서비스 관리 -->
+  <div class="item">
+    <a class="title">
+      <i class="dropdown icon"></i>
+      유료 서비스 관리
+    </a>
+    <div class="content">
+      <div class="ui form">
+        <div class="grouped fields">
+          <a href="#" class="nav_btn">menu1</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <!-- 매칭 관리 -->
+  <div class="item">
+    <a class="title">
+      <i class="dropdown icon"></i>
+      매칭 관리
+    </a>
+    <div class="content">
+      <div class="ui form">
+        <div class="grouped fields">
+          <a href="#" class="nav_btn">menu1</a>
+        </div>
+      </div>
+    </div>
+  </div>   
+  <!-- 통계 -->
+  <div class="item">
+    <a class="title">
+      <i class="dropdown icon"></i>
+      통계
+    </a>
+    <div class="content">
+      <div class="ui form">
+        <div class="grouped fields">
+          <a href="#" class="nav_btn">menu1</a>
+        </div>
+      </div>
+    </div>
+  </div>   
 </div>
 <script>
   $('.ui.accordion').accordion();

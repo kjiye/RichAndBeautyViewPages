@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인증/심사 부결</title>
+    <link rel="stylesheet" href="../../public/stylesheets/style.css" />
+    <link rel="stylesheet" href="../../public/stylesheets/semantic.min.css" />
+
+    <script type="text/javascript" src="../../public/scripts/lib/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../../public/scripts/lib/semantic.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.js"></script>
+    
+    <script type="text/javascript" src="../../public/scripts/common.js"></script>
+    <script type="text/javascript" src="../../public/scripts/certification.js"></script>
+    <script type="text/javascript" src="../../public/scripts/calendar.js"></script>
+</head>
+<body>
+    <header id="header" include-html="/views/header.html"></header>
+    <nav id="snb" include-html="/views/nav.html"></nav>
+
+    <div id="content">
+        <h3 class="ui header underline">
+            <div class="content">인증/심사 부결 (12,345건)</div>
+        </h3>
+
+        <!-- 부결 승인 -->
+        <div class="ui horizontal">
+            <div class="right_floated">
+                <div class="ui floating dropdown labeled basic search icon button">
+                    <i class="tasks icon"></i>
+                    <span class="text">부결 사유 선택</span>
+                    <div class="menu">
+                        <div class="item">관련 없는 사진 제출</div>
+                        <div class="item">뱃지 기준 부적합</div>
+                        <div class="item">증빙자료 명의자 불일치</div>
+                        <div class="item">본인 여부 재확인 필요</div>
+                        <div class="item">사진 식별 불가</div>
+                        <div class="item">욕설 또는 금지단어</div>
+                        <div class="item">불가능한 자료 제출</div>
+                        <div class="item">내부 심사 기준 부적합</div>
+                    </div>
+                </div>
+                <button id="deny" class="ui red button">부결</button>
+                <button id="approve" class="ui blue button">승인</button>
+            </div>
+        </div>
+
+        <div class="ui horizontal" style="margin-top:80px">
+            <!-- 
+            <div class="ui selection compact dropdown right_gap">
+                <input type="hidden" name="gender">
+                <i class="dropdown icon"></i>
+                <div class="default text">구분</div>
+                <div class="menu">
+                  <div class="item" data-value="0">전체</div>
+                  <div class="item" data-value="1">대기</div>
+                  <div class="item" data-value="2">승인</div>
+                  <div class="item" data-value="3">부결</div>
+                </div>
+            </div> 
+            -->
+            <div class="ui selection compact dropdown right_gap">
+                <input type="hidden" name="gender">
+                <i class="dropdown icon"></i>
+                <div class="default text">요청 심사</div>
+                <div class="menu">
+                  <div class="item" data-value="0">전체</div>
+                  <div class="item" data-value="1">인증제외</div>
+                  <div class="item" data-value="2">학교인증</div>
+                  <div class="item" data-value="3">직장인증</div>
+                  <div class="item" data-value="4">본인인증</div>
+                </div>
+            </div>
+            <div class="ui calendar clear_block" id="start_date">
+                <div class="ui input left icon">
+                    <i class="calendar icon"></i>
+                    <input type="text" placeholder="시작일" name="date" class="short_input_date" autocomplete="off" value="">
+                </div>
+            </div>
+            <label>~</label>
+            <div class="ui calendar clear_block" id="end_date">
+                <div class="ui input left icon">
+                    <i class="calendar icon"></i>
+                    <input type="text" placeholder="종료일" name="date" class="short_input_date" autocomplete="off" value="">
+                </div>
+            </div>
+            <div class="right_floated">
+                <div class="ui floating dropdown labeled basic search icon button">
+                    <i class="filter icon"></i>
+                    <span class="text">검색 필터</span>
+                    <div class="menu">
+                      <div class="item">전체</div>
+                      <div class="item">회원명</div>
+                      <div class="item">전화번호</div>
+                    </div>
+                </div>
+                <div class="ui action input">
+                    <input type="text" placeholder="Keyword">
+                    <button class="ui icon blue button">
+                      <i class="search icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <table class="ui celled padded table list">
+            <thead>
+            <tr>
+              <th>
+                <div class="ui checked checkbox">
+                    <input type="checkbox" checked>
+                    <label></label>
+                </div>                  
+              </th>
+              <th class="single line">요청 일시</th>
+              <th>회원명</th>
+              <th>전화번호</th>
+              <!-- <th>성별</th> -->
+              <th>요청심사</th>
+              <th>특이사항</th>
+              <th>처리담당</th>
+              <th>결과</th>
+              <th>처리 일시</th>
+              <th>상세정보</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                    <div class="ui checked checkbox">
+                        <input type="checkbox" checked>
+                        <label></label>
+                    </div>
+                </td>
+                <td>2022.01.23 13:13:10</td>
+                <td class="light_red">
+                    <a class="nickname" href="../../views/account/member/detail.html">홍길동<br>(닉네임)</a>
+                </td>
+                <td>010-1111-1111</td>
+                <!-- 
+                <td class="sky_blue">
+                    <i class="male large blue icon"></i>남
+                </td> -->
+                <td>능력심사 프로필</td>
+                <td>프로필에 연락처</td>
+                <td>직원명<br>(아이디)</td>
+                <td>부결</td>
+                <td>2022.03.02 16:12:10</td>
+                <td>
+                    <a class="ui green tiny inverted button identification">보기</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <div class="ui checked checkbox">
+                        <input type="checkbox" checked>
+                        <label></label>
+                    </div>
+                </td>
+                <td>2022.01.23 13:13:10</td>
+                <td class="sky_blue">
+                    <a class="nickname" href="../../views/account/member/detail.html">홍길동<br>(닉네임)</a>
+                </td>
+                <td>010-1111-1111</td>
+                <!-- 
+                <td class="light_red">
+                    <i class="female large red icon"></i>여
+                </td> 
+                -->
+                <td>능력심사 프로필</td>
+                <td>프로필에 연락처</td>
+                <td>직원명<br>(아이디)</td>
+                <td>부결</td>
+                <td>2022.03.02 16:12:10</td>
+                <td>
+                    <a class="ui green tiny inverted button job">보기</a>
+                </td>
+              </tr>
+
+            </tbody>
+            <!-- pagination -->
+            <tfoot>
+                <tr>
+                    <th colspan="11">
+                        <div class="ui right floated pagination menu">
+                            <a class="icon item">
+                                <i class="left chevron icon"></i>
+                            </a>
+                            <a class="item">1</a>
+                            <a class="item">2</a>
+                            <a class="item">3</a>
+                            <a class="item">4</a>
+                            <a class="icon item">
+                                <i class="right chevron icon"></i>
+                            </a>
+                        </div>
+                    </th>
+                </tr>
+            </tfoot>
+          </table>
+
+    </div>
+    
+</body>
+<script>
+    $("#header").load("../../views/header.html");
+    $("#snb").load("../../views/nav.html"); 
+</script>
+</html>

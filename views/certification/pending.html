@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>인증/심사 관리 리스트</title>
+    <title>인증/심사 대기</title>
     <link rel="stylesheet" href="../../public/stylesheets/style.css" />
     <link rel="stylesheet" href="../../public/stylesheets/semantic.min.css" />
 
@@ -22,7 +22,7 @@
 
     <div id="content">
         <h3 class="ui header underline">
-            <div class="content">인증/심사 관리 (12,345건)</div>
+            <div class="content">인증/심사 대기 (12,345건)</div>
         </h3>
 
         <!-- 부결 승인 -->
@@ -48,6 +48,7 @@
         </div>
 
         <div class="ui horizontal" style="margin-top:80px">
+            <!-- 
             <div class="ui selection compact dropdown right_gap">
                 <input type="hidden" name="gender">
                 <i class="dropdown icon"></i>
@@ -58,7 +59,8 @@
                   <div class="item" data-value="2">승인</div>
                   <div class="item" data-value="3">부결</div>
                 </div>
-            </div>
+            </div> 
+            -->
             <div class="ui selection compact dropdown right_gap">
                 <input type="hidden" name="gender">
                 <i class="dropdown icon"></i>
@@ -103,7 +105,7 @@
             </div>
         </div>
 
-        <table class="ui celled padded table">
+        <table class="ui celled padded table list">
             <thead>
             <tr>
               <th>
@@ -115,12 +117,8 @@
               <th class="single line">요청 일시</th>
               <th>회원명</th>
               <th>전화번호</th>
-              <th>성별</th>
+              <!-- <th>성별</th> -->
               <th>요청심사</th>
-              <th>특이사항</th>
-              <th>처리담당</th>
-              <th>결과</th>
-              <th>처리 일시</th>
               <th>상세정보</th>
             </tr>
             </thead>
@@ -133,19 +131,15 @@
                     </div>
                 </td>
                 <td>2022.01.23 13:13:10</td>
-                <!-- 클릭 시 이동 -->
-                <td>
-                    <a href="../../views/account/member/detail.html">홍길동<br>(닉네임)</a>
+                <td class="light_red">
+                    <a class="nickname" href="../../views/account/member/detail.html">홍길동<br>(닉네임)</a>
                 </td>
                 <td>010-1111-1111</td>
+                <!-- 
                 <td class="sky_blue">
                     <i class="male large blue icon"></i>남
-                </td>
+                </td> -->
                 <td>능력심사 프로필</td>
-                <td>프로필에 연락처</td>
-                <td>직원명<br>(아이디)</td>
-                <td>부결</td>
-                <td>2022.03.02 16:12:10</td>
                 <td>
                     <a class="ui green tiny inverted button identification">보기</a>
                 </td>
@@ -158,23 +152,20 @@
                     </div>
                 </td>
                 <td>2022.01.23 13:13:10</td>
-                <td>
-                    <a href="../../views/account/member/detail.html">홍길동<br>(닉네임)</a>
+                <td class="sky_blue">
+                    <a class="nickname" href="../../views/account/member/detail.html">홍길동<br>(닉네임)</a>
                 </td>
                 <td>010-1111-1111</td>
-                <td class="light_red">
-                    <i class="female large red icon"></i>여
-                </td>
+                <!-- 
+                <td class="sky_blue">
+                    <i class="male large blue icon"></i>남
+                </td> 
+                -->
                 <td>능력심사 프로필</td>
-                <td>프로필에 연락처</td>
-                <td>직원명<br>(아이디)</td>
-                <td>부결</td>
-                <td>2022.03.02 16:12:10</td>
                 <td>
-                    <a class="ui green tiny inverted button job">보기</a>
+                    <a class="ui green tiny inverted button identification">보기</a>
                 </td>
-              </tr>
-
+              </tr>              
             </tbody>
             <!-- pagination -->
             <tfoot>
