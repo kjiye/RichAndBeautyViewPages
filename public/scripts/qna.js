@@ -18,8 +18,21 @@ const QnA = (function($){
         }
     }
 
+    // detail.html 답변 작성 모드인지 상세 모드인지 체크
+    let checkPageMode = function(){
+        let url = window.location.href;
+        if (url.includes('/qna/detail.html')) {
+            let qs = window.location.search;
+            if (qs.includes('reply')) {
+                console.log('!!!');
+                return showReplyTextArea();
+            }
+        }
+    };
+
     return {
         init: function(){
+            checkPageMode();
             $('.write_reply').on('click', showReplyTextArea);
             $('.reg_reply').on('click', regReply);
         }

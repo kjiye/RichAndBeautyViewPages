@@ -15,6 +15,7 @@
     <script type="text/javascript" src="../../../public/scripts/common.js"></script>
     <script type="text/javascript" src="../../../public/scripts/certification.js"></script>
     <script type="text/javascript" src="../../../public/scripts/calendar.js"></script>
+    <script type="text/javascript" src="../../../public/scripts/qna.js"></script>
 </head>
 <body>
     <header id="header" include-html="/views/header.html"></header>
@@ -55,7 +56,6 @@
                     <span class="text">검색 필터</span>
                     <div class="menu">
                       <div class="item">이름</div>
-                      <div class="item">회원번호</div>
                       <div class="item">휴대폰번호</div>
                       <div class="item">제목</div>
                       <div class="item">내용</div>
@@ -75,12 +75,12 @@
             <thead>
             <tr>
               <th>
-                <div class="ui checked checkbox">
-                    <input type="checkbox" checked>
+                <div class="ui checkbox">
+                    <input type="checkbox" name="check_all">
                     <label></label>
                 </div>                  
               </th>
-              <th class="single line">회원번호</th>
+              <!-- <th class="single line">회원번호</th> -->
               <th>회원명</th>
               <th>휴대폰번호</th>
               <th>제목</th>
@@ -94,49 +94,46 @@
             <tbody>
               <tr>
                 <td>
-                    <div class="ui checked checkbox">
-                        <input type="checkbox" checked>
+                    <div class="ui checkbox">
+                        <input type="checkbox" name="check">
                         <label></label>
                     </div>
                 </td>
-                <td>112</td>
-                <!-- 클릭 시 이동 -->
+                <!-- <td>112</td> -->
                 <td>홍길동</td>
                 <td>010-1111-1111</td>
                 <td>프사가 당했어요</td>
                 <td>
-                    <i class="check circle blue icon"></i>
-                    예
+                    <i class="check circle blue large icon"></i>
                 </td>
                 <td>2022.03.02 16:12:10</td>
                 <td>정다은<br>(아이디)</td>
                 <td>2022.03.02 16:12:10</td>
                 <td>
-                    <a href="../../../views/cs/qna/detail.html" class="ui left attached tiny green inverted button">상세보기</a>
-                    <a class="right attached ui tiny orange inverted button">답변작성</a>
-                    </div>
+                    <a href="../../../views/cs/qna/detail.html" class="ui tiny green inverted button">상세보기</a>
+                    <a href="../../../views/cs/qna/detail.html?mode=reply" class="ui tiny orange inverted button">답변작성</a>
                 </td>
               </tr>
               <tr>
                 <td>
-                    <div class="ui checked checkbox">
-                        <input type="checkbox" checked>
+                    <div class="ui checkbox">
+                        <input type="checkbox" name="check">
                         <label></label>
                     </div>
                 </td>
-                <td>111</td>
+                <!-- <td>111</td> -->
                 <td>홍길동</td>
                 <td>010-1111-1111</td>
                 <td>계정이 이상해요</td>
                 <td>
-                    <i class="close icon"></i>
+                    <i class="close large icon"></i>
                 </td>
                 <td>2022.03.02 16:12:10</td>
                 <td>정다은<br>(아이디)</td>
                 <td></td>
                 <td>
-                    <a class="ui left attached tiny green inverted button">상세보기</a>
-                    <a class="right attached ui tiny orange inverted button">답변작성</a>
+                    <a href="../../../views/cs/qna/detail.html" class="ui tiny green inverted button">상세보기</a>
+                    <a href="../../../views/cs/qna/detail.html?mode=reply" class="ui tiny orange inverted button">답변작성</a>
                 </td>
               </tr>
             </tbody>

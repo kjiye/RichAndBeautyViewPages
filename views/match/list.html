@@ -38,8 +38,6 @@
         <div class="ui horizontal top_gap">
             <button id="block" class="ui red button">이용정지</button>
             <button id="pass" class="ui green button right_margin">정상</button>
-
-
             <div class="right_floated">
                 <div class="ui selection dropdown right_gap">
                     <input type="hidden" name="gender">
@@ -85,8 +83,8 @@
             <thead>
             <tr>
               <th class="single line">
-                <div class="ui checked checkbox">
-                    <input type="checkbox" checked>
+                <div class="ui checkbox">
+                    <input type="checkbox" name="check_all">
                     <label></label>
                 </div>
               </th>
@@ -104,23 +102,25 @@
             </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr class="ui warning">
                 <td>
-                    <div class="ui checked checkbox">
-                        <input type="checkbox" checked>
+                    <div class="ui checkbox">
+                        <input type="checkbox" name="check">
                         <label></label>
                     </div>                    
                 </td>
                 <td>2022.01.23<br>16:00:34</td>
-                <td class="sky_blue">
-                    <a class="nickname" href="../../views/account/member/detail.html">회원명<br>(닉네임)</a>
+                <td class="sky_blue center">
+                    <a class="nickname" href="../../views/account/member/detail.html">
+                        회원명<br>(닉네임)
+                    </a>
                 </td>
                 <td>010-1234-1234</td>
                 <td>LIKE</td>
                 <td>회원명<br>(닉네임)</td>
                 <td>호감 있어서 LIKE 보내드려요~</td>
                 <td>김지현<br>(ID)</td>
-                <td class="lemon">미진행</td>
+                <td>미진행</td>
                 <td></td>
                 <td></td>
                 <td>
@@ -129,8 +129,8 @@
               </tr>
               <tr>
                 <td>
-                    <div class="ui checked checkbox">
-                        <input type="checkbox" checked>
+                    <div class="ui checkbox">
+                        <input type="checkbox" name="check">
                         <label></label>
                     </div>                    
                 </td>

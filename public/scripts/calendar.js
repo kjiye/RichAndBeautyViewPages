@@ -41,6 +41,10 @@ const Calendar = (function($){
                     }
                 },
             });
+            $('#time_picker').calendar({
+                type : 'time',
+                ampm : false,
+            });
         }
     }
 

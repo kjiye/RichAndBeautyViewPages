@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>캐시 상세내역</title>
+    <link rel="stylesheet" href="../../public/stylesheets/style.css" />
+    <link rel="stylesheet" href="../../public/stylesheets/semantic.min.css" />
+
+    <script type="text/javascript" src="../../public/scripts/lib/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../../public/scripts/lib/semantic.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.js"></script>
+    
+    <script type="text/javascript" src="../../public/scripts/common.js"></script>
+    <script type="text/javascript" src="../../public/scripts/calendar.js"></script>
+    <script type="text/javascript" src="../../public/scripts/cash.js"></script>
+</head>
+<body>
+    <header id="header" include-html="/views/header.html"></header>
+    <nav id="snb" include-html="/views/nav.html"></nav>
+
+    <div id="content">
+        <h3 class="ui header underline">
+            <div class="content">캐시 상세내역</div>
+        </h3>
+        <h4 class="ui header">대상조회</h4>
+        <div class="ui form form_box">
+            <div class="five fields">
+                <div class="field">
+                  <label>성별</label>
+                  <input type="text" value="전체" readonly>
+                </div>
+                <div class="field">
+                  <label>상태</label>
+                  <input type="text" value="전체" readonly>
+                </div>
+                <div class="field">
+                  <label>스펙</label>
+                  <input type="text" value="능력심사" readonly>
+                </div>
+                <div class="field">
+                  <label>매칭이성</label>
+                  <input type="text" value="전체" readonly>
+                </div>
+                <div class="field">
+                  <label>시작일</label>
+                  <input type="text" value="2022.02.25" readonly>
+                </div>                            
+              </div>            
+            <div class="five fields">
+              <div class="field">
+                <label>나이(이상)</label>
+                <input type="text" value="20세" readonly>
+              </div>
+              <div class="field">
+                <label>나이(이하)</label>
+                <input type="text" value="25세" readonly>
+              </div>
+              <div class="field">
+                <label>보유캐시(이상)</label>
+                <input type="text" value="10개" readonly>
+              </div>
+              <div class="field">
+                <label>보유캐시(이하)</label>
+                <input type="text" value="20개" readonly>
+              </div>
+              <div class="field">
+                <label>종료일</label>
+                <input type="text" value="2022.03.01" readonly>
+              </div>                            
+            </div>
+        </div>
+        <h4 class="ui header">처리현황</h4>
+        <div class="ui form form_box">
+            <div class="six fields">
+                <div class="field">
+                    <label>담당자</label>
+                    <input type="text" value="김지현" readonly>
+                </div>
+                <div class="field">
+                    <label>지급/회수 여부</label>
+                    <input type="text" value="지급" readonly>
+                </div> 
+                <div class="field">
+                    <label>수량</label>
+                    <input type="text" value="10" readonly>
+                </div> 
+                <div class="field">
+                    <label>푸시 발송 여부</label>
+                    <input type="text" value="발송" readonly>
+                </div>
+                <div class="field">
+                    <label>푸시 발송 담당자</label>
+                    <input type="text" value="김지현" readonly>
+                </div>
+                <div class="field">
+                    <label>처리 일시</label>
+                    <input type="text" value="2022.03.01" readonly>
+                </div>                                                                                                                                               
+            </div>
+
+        </div>
+
+        <h4 class="ui header">전체 대상 : 1,234명</h4>
+        <div class="table_container">
+            <table class="ui celled table list">
+                <thead>
+                  <tr>
+                    <th>회원명</th>
+                    <th>전화번호</th>
+                    <th>상태</th>
+                    <th>스펙</th>
+                    <th>매칭이력</th>
+                    <th>나이</th>
+                    <th>보유캐시</th>
+                    <th>가입일</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="sky_blue" data-label="name">홍길동</td>
+                    <td data-label="phone">010-1111-1111</td>
+                    <td data-label="status">정상</td>
+                    <td data-label="spec">능력심사</td>
+                    <td data-label="match">
+                        <i class="check circle blue large icon"></i>
+                    </td>
+                    <td data-label="age">22</td>
+                    <td data-label="cash">10</td>
+                    <td data-label="join_date">2021.11.13 19:08:00</td>
+                  </tr>
+                  <tr>
+                    <td class="light_red" data-label="name">홍길동</td>
+                    <td data-label="phone">010-1234-1234</td>
+                    <td data-label="status">정상</td>
+                    <td data-label="spec">매력심사</td>
+                    <td data-label="match">
+                        <i class="close large icon"></i>
+                    </td>
+                    <td data-label="age">22</td>
+                    <td data-label="cash">10</td>
+                    <td data-label="join_date">2021.11.13 19:08:00</td>
+                  </tr>                  
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script>
+    $("#header").load("../../views/header.html");
+    $("#snb").load("../../views/nav.html"); 
+</script>
+</html>

@@ -70,10 +70,55 @@ const Common = (function($){
         window.open(`${ROOT_PATH}/party/popup/member_detail.html`,"_blank", "width=1200,height=800")
     };
 
+    // 문의이력 새창 열기
+    let qnaHistoryView = function(){
+        window.open(`${ROOT_PATH}/cs/qna/popup/history.html`, "_blank", "width=1200,height=800")
+    };
+
+    // 문의이력 상세 새창 열기
+    let qnaDetailView = function(){
+        window.open(`${ROOT_PATH}/cs/qna/detail.html`, "_blank");
+        // window.open("about:blank").location.href = `${ROOT_PATH}/cs/qna/detail.html`;
+    };
+
+    // 체크박스 전체 선택 해제
+    let checkAllAction = function(){
+        let all_checkbox = $('input[name="check_all"]').parent();
+        let checked = all_checkbox.checkbox("is checked");
+        let prevent = all_checkbox.hasClass("prevent");
+
+        if (!prevent) {
+            if (checked) {
+                $('input[name="check"]').parent().checkbox('check');
+            } else {
+                $('input[name="check"]').parent().checkbox('uncheck');
+            }
+        }
+        all_checkbox.removeClass("prevent");
+    };
+
+    let checkOneAction = function(){
+        let all_checkbox = $('input[name="check_all"]').parent();
+        let checked = $(this).parent().checkbox("is checked");
+        
+        if (!checked) {
+            all_checkbox.addClass("prevent");
+            all_checkbox.checkbox("uncheck");
+        } else {
+            let check_arr = $('input[name="check"]').parent().checkbox("is checked");
+            if (!check_arr.includes(false)) {
+                all_checkbox.checkbox("check");
+            }
+        }
+    };
+
+
+
     return {
         init: function(){
             // $('.ui.accordion').accordion();
             $('.ui.dropdown').dropdown();
+            $('.ui.checkbox').checkbox();
             $(window).scroll(function(){
                 $(".ui.segment.fixed_content").css("margin-top",Math.max(-100,0-$(this).scrollTop()));
             });
@@ -90,6 +135,10 @@ const Common = (function($){
             $('button.party').on('click', partyDetailView);
             $('button.close').on('click', windowClose);
             $('a.member').on('click', memberDetailView);
+            $('button.qna_history').on('click', qnaHistoryView);
+            $('button.qna_detail').on('click', qnaDetailView);
+            $('input[name="check_all"]').on('change', checkAllAction);
+            $('input[name="check"]').on('change', checkOneAction);
         }
     }
 
