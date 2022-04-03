@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +11,13 @@
 
     <script type="text/javascript" src="../../../public/scripts/lib/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="../../../public/scripts/lib/semantic.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.js"></script>
-    
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.js"></script>
+
     <script type="text/javascript" src="../../../public/scripts/common.js"></script>
     <script type="text/javascript" src="../../../public/scripts/qna.js"></script>
 </head>
+
 <body>
     <header id="header" include-html="/views/header.html"></header>
     <nav id="snb" include-html="/views/nav.html"></nav>
@@ -22,41 +25,43 @@
     <div id="content">
         <h3 class="ui header underline">
             <div class="content">공지사항 조회</div>
-        </h3>        
-    <div class="clear_floated">
-        <div class="right_floated">
-            <a href="../../../views/cs/notice/modify.html" class="ui blue button">수정</a>
-            <a href="../../../views/cs/notice/list.html" class="ui orange button">목록</a>
+        </h3>
+        <div class="clear_floated">
+            <div class="right_floated">
+                <a href="../../../views/cs/notice/modify.html" class="ui blue button">수정</a>
+                <a href="../../../views/cs/notice/list.html" class="ui orange button">목록</a>
+            </div>
         </div>
-    </div>
         <table class="ui definition table">
             <tbody>
-              <tr>
-                <td>등록자</td>
-                <td>정다은</td>
-              </tr>
-              <tr>
-                <td>등록일시</td>
-                <td>2022.01.23 11:19:20</td>
-              </tr>
-              <tr>
-                <td>제목</td>
-                <td>공지사항 제목 표시되는 곳</td>
-              </tr>
-              <tr>
-                <td>내용</td>
-                <td>
-                    <div class="min_cnt_height">
-                        공지사항 내용 출력되는 곳.
-                        최소 높이 조절
-                    </div>
-                </td>
-              </tr>
-          </tbody></table>           
+                <tr>
+                    <td>등록자</td>
+                    <td>정다은</td>
+                </tr>
+                <tr>
+                    <td>등록일시</td>
+                    <td>2022.01.23 11:19:20</td>
+                </tr>
+                <tr>
+                    <td>제목</td>
+                    <td>공지사항 제목 표시되는 곳</td>
+                </tr>
+                <tr>
+                    <td>내용</td>
+                    <td>
+                        <div class="min_cnt_height">
+                            공지사항 내용 출력되는 곳.
+                            최소 높이 조절
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 <script>
     $("#header").load("../../../views/header.html");
-    $("#snb").load("../../../views/nav.html"); 
+    $("#snb").load("../../../views/nav.html");
 </script>
+
 </html>

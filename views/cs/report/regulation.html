@@ -1,115 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>신고 제재 내역</title>
-    <link rel="stylesheet" href="../../../public/stylesheets/style.css" />
-    <link rel="stylesheet" href="../../../public/stylesheets/semantic.min.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>신고 제재 내역</title>
+  <link rel="stylesheet" href="../../../public/stylesheets/style.css" />
+  <link rel="stylesheet" href="../../../public/stylesheets/semantic.min.css" />
 
-    <script type="text/javascript" src="../../../public/scripts/lib/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="../../../public/scripts/lib/semantic.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.js"></script>
-    
-    <script type="text/javascript" src="../../../public/scripts/common.js"></script>
-    <script type="text/javascript" src="../../../public/scripts/report.js"></script>
+  <script type="text/javascript" src="../../../public/scripts/lib/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="../../../public/scripts/lib/semantic.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.js"></script>
+
+  <script type="text/javascript" src="../../../public/scripts/common.js"></script>
+  <script type="text/javascript" src="../../../public/scripts/report.js"></script>
 </head>
+
 <body>
-    <header id="header" include-html="/views/header.html"></header>
-    <nav id="snb" include-html="/views/nav.html"></nav>
-
-    <div id="content">
-        <h3 class="ui header underline">
-            <div class="content">
-                <div class="ui horizontal">
-                <span class="sky_blue">닉네임 (010-1111-1111)</span> 님의 신고 제재 내역
-                <a class="ui mini blue button left_margin" href="../../../views/account/member/detail.html">
-                    <i class="user icon"></i>
-                    프로필
-                </a>
-                </div>
-            </div>
-        </h3>        
-        <div class="limit_container large">
-            <!-- table이 list component 대체 -->
-            <table class="ui five column structive table">
-                <tbody>
-                  <tr>
-                    <td class="light_gray">신고자명</td>
-                    <td colspan="3">닉네임 (010-1234-1234)</td>
-                    <td></td>
-                    <td class="light_gray">신고일</td>
-                    <td>2022.04.01 11:04:00</td>
-                  </tr>
-                  <tr>
-                    <td class="light_gray">신고사유</td>
-                    <td colspan="3">개인 연락처 공유</td>
-                    <td></td>
-                    <td class="light_gray">신고구분</td>
-                    <td>파티</td>
-                  </tr>
-                  <tr>
-                    <td class="light_gray">신고내용</td>
-                    <td colspan="3">-</td>
-                    <td></td>
-                    <td class="light_gray">처리여부</td>
-                    <td>-</td>
-                  </tr>
-                  <tr>
-                    <td class="light_gray">내용</td>
-                    <td colspan="4">카톡으로 연락할래요? 공 일 공 빨리빨리-빨리빨리로 연락해요 (~¯▽¯)~</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-            </table>
-        </div>
-
-    </div>
-
-    <!-- 신규생성 모달 -->
-    <div class="ui small modal">
-      <i class="close icon"></i>
-      <div class="header">
-        제재 구분
-      </div>
+  <header id="header" include-html="/views/header.html"></header>
+  <nav id="snb" include-html="/views/nav.html"></nav>
+  <div id="content">
+    <h3 class="ui header underline">
       <div class="content">
-        <div class="ui form">
-            <div class="grouped fields">
-              <div class="field">
-                <div class="ui radio checkbox">
-                  <input type="radio" name="regulation">
-                  <label>영구 정지</label>
-                </div>
-              </div>
-              <div class="field">
-                <div class="ui radio checkbox">
-                  <input type="radio" name="regulation">
-                  <label>3일 정지</label>
-                </div>
-              </div>
-              <div class="field">
-                <div class="ui radio checkbox">
-                  <input type="radio" name="regulation">
-                  <label>혐의 없음</label>
-                </div>
-              </div>
+        <div class="ui horizontal">
+          <span class="sky_blue">닉네임 (010-1111-1111)</span> 님의 신고 제재 내역
+          <a class="ui mini blue button left_margin" href="../../../views/account/member/detail.html">
+            <i class="user icon"></i>
+            프로필
+          </a>
+        </div>
+      </div>
+    </h3>
+    <div class="limit_container large">
+      <!-- table이 list component 대체 -->
+      <table class="ui five column structive table">
+        <tbody>
+          <tr>
+            <td class="light_gray">신고자명</td>
+            <td colspan="3">닉네임 (010-1234-1234)</td>
+            <td></td>
+            <td class="light_gray">신고일</td>
+            <td>2022.04.01 11:04:00</td>
+          </tr>
+          <tr>
+            <td class="light_gray">신고사유</td>
+            <td colspan="3">개인 연락처 공유</td>
+            <td></td>
+            <td class="light_gray">신고구분</td>
+            <td>파티</td>
+          </tr>
+          <tr>
+            <td class="light_gray">신고내용</td>
+            <td colspan="3">-</td>
+            <td></td>
+            <td class="light_gray">처리여부</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td class="light_gray">내용</td>
+            <td colspan="4">카톡으로 연락할래요? 공 일 공 빨리빨리-빨리빨리로 연락해요 (~¯▽¯)~</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- 신규생성 모달 -->
+  <div class="ui small modal">
+    <i class="close icon"></i>
+    <div class="header">
+      제재 구분
+    </div>
+    <div class="content">
+      <div class="ui form">
+        <div class="grouped fields">
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="regulation">
+              <label>영구 정지</label>
             </div>
           </div>
-      </div>
-      <div class="actions">
-        <div class="ui black deny button">취소</div>
-        <div id="new_account" class="ui positive right labeled icon button">
-          완료
-          <i class="checkmark icon"></i>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="regulation">
+              <label>3일 정지</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="regulation">
+              <label>혐의 없음</label>
+            </div>
+          </div>
         </div>
       </div>
-    </div>     
-    
+    </div>
+    <div class="actions">
+      <div class="ui black deny button">취소</div>
+      <div id="new_account" class="ui positive right labeled icon button">
+        완료
+        <i class="checkmark icon"></i>
+      </div>
+    </div>
+  </div>
+
 </body>
 <script>
-    $("#header").load("../../../views/header.html");
-    $("#snb").load("../../../views/nav.html"); 
+  $("#header").load("../../../views/header.html");
+  $("#snb").load("../../../views/nav.html");
 </script>
+
 </html>

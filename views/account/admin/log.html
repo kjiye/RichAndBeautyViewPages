@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +11,13 @@
 
     <script type="text/javascript" src="../../../public/scripts/lib/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="../../../public/scripts/lib/semantic.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.js"></script>
-    
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.js"></script>
+
     <script type="text/javascript" src="../../../public/scripts/calendar.js"></script>
     <script type="text/javascript" src="../../../public/scripts/admin.js"></script>
 </head>
+
 <body>
     <header id="header" include-html="/views/header.html"></header>
     <nav id="snb" include-html="/views/nav.html"></nav>
@@ -23,31 +26,31 @@
         <h3 class="ui header underline">
             <div class="content">관리자 시스템 로그</div>
             <!-- <div class="sub header">관리자 시스템 로그를 조회하는 페이지입니다</div> -->
-        </h3>        
+        </h3>
         <table class="ui eight column table">
             <tbody>
-              <tr>
-                <td class="light_gray">이름</td>
-                <td>aa</td>
-                <td class="light_gray">전화번호</td>
-                <td>aa</td>
-                <td class="light_gray">ID</td>
-                <td>aa</td>
-                <td class="light_gray">등급</td>
-                <td>aa</td>
-              </tr>
-              <tr>
-                <td class="light_gray">가입일</td>
-                <td>aa</td>
-                <td class="light_gray">탈퇴일</td>
-                <td>aa</td>
-                <td class="light_gray">상태</td>
-                <td>aa</td>
-                <td class="light_gray">최근 접속일시</td>
-                <td>aa</td>
-              </tr>
+                <tr>
+                    <td class="light_gray">이름</td>
+                    <td>aa</td>
+                    <td class="light_gray">전화번호</td>
+                    <td>aa</td>
+                    <td class="light_gray">ID</td>
+                    <td>aa</td>
+                    <td class="light_gray">등급</td>
+                    <td>aa</td>
+                </tr>
+                <tr>
+                    <td class="light_gray">가입일</td>
+                    <td>aa</td>
+                    <td class="light_gray">탈퇴일</td>
+                    <td>aa</td>
+                    <td class="light_gray">상태</td>
+                    <td>aa</td>
+                    <td class="light_gray">최근 접속일시</td>
+                    <td>aa</td>
+                </tr>
             </tbody>
-        </table>        
+        </table>
         <h4 class="ui horizontal divider header">
             <i class="file alternate outline mini icon"></i>
             시스템 로그
@@ -56,14 +59,16 @@
             <div class="ui calendar clear_block" id="start_date">
                 <div class="ui input left icon">
                     <i class="calendar icon"></i>
-                    <input type="text" placeholder="기준 시작일" name="date" class="short_input_date" autocomplete="off" value="">
+                    <input type="text" placeholder="기준 시작일" name="date" class="short_input_date" autocomplete="off"
+                        value="">
                 </div>
             </div>
             <label>~</label>
             <div class="ui calendar clear_block" id="end_date">
                 <div class="ui input left icon">
                     <i class="calendar icon"></i>
-                    <input type="text" placeholder="기준 종료일" name="date" class="short_input_date" autocomplete="off" value="">
+                    <input type="text" placeholder="기준 종료일" name="date" class="short_input_date" autocomplete="off"
+                        value="">
                 </div>
             </div>
             <button class="ui blue button left_margin">조회하기</button>
@@ -71,39 +76,42 @@
         <div class="table_container" style="margin-top:65px;">
             <table class="ui celled table">
                 <thead>
-                <tr><th>No.</th>
-                <th>일시</th>
-                <th>페이지</th>
-                <th>대상</th>
-                <th>처리</th>
-                <th>결과</th>
-                </tr></thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>일시</th>
+                        <th>페이지</th>
+                        <th>대상</th>
+                        <th>처리</th>
+                        <th>결과</th>
+                    </tr>
+                </thead>
                 <tbody>
-                <tr>
-                    <td data-label="index">2</td>
-                    <td data-label="date">2022.01.12 19:20:00</td>
-                    <td data-label="page">인증 심사 관리</td>
-                    <td data-label="target">회원명 (닉네임)</td>
-                    <td data-label="action">변경</td>
-                    <td data-label="result">성공</td>
-                </tr>
-                <tr>
-                    <td data-label="index">1</td>
-                    <td data-label="date">2022.01.12 19:20:00</td>
-                    <td data-label="page">비밀번호 변경</td>
-                    <td data-label="target">관리자 (ID)</td>
-                    <td data-label="action">변경</td>
-                    <td data-label="result">성공</td>
-                </tr>              
-            </tbody>
-          </table>  
-        </div>      
+                    <tr>
+                        <td data-label="index">2</td>
+                        <td data-label="date">2022.01.12 19:20:00</td>
+                        <td data-label="page">인증 심사 관리</td>
+                        <td data-label="target">회원명 (닉네임)</td>
+                        <td data-label="action">변경</td>
+                        <td data-label="result">성공</td>
+                    </tr>
+                    <tr>
+                        <td data-label="index">1</td>
+                        <td data-label="date">2022.01.12 19:20:00</td>
+                        <td data-label="page">비밀번호 변경</td>
+                        <td data-label="target">관리자 (ID)</td>
+                        <td data-label="action">변경</td>
+                        <td data-label="result">성공</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
- 
-    
+
+
 </body>
 <script>
     $("#header").load("../../../views/header.html");
-    $("#snb").load("../../../views/nav.html"); 
+    $("#snb").load("../../../views/nav.html");
 </script>
+
 </html>

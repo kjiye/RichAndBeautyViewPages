@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,13 +11,17 @@
 
     <script type="text/javascript" src="../../../public/scripts/lib/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="../../../public/scripts/lib/semantic.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.js"></script>
-    
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.js"></script>
+
     <script type="text/javascript" src="../../../public/scripts/common.js"></script>
     <script type="text/javascript" src="../../../public/scripts/certification.js"></script>
     <script type="text/javascript" src="../../../public/scripts/calendar.js"></script>
+
+    <script type="text/javascript" src="../../../public/scripts/util/ko.js"></script>
     <script type="text/javascript" src="../../../public/scripts/qna.js"></script>
 </head>
+
 <body>
     <header id="header" include-html="/views/header.html"></header>
     <nav id="snb" include-html="/views/nav.html"></nav>
@@ -32,22 +37,24 @@
                 <!-- <div class="default text">답변</div> -->
                 <div class="text">미완료</div>
                 <div class="menu">
-                  <div class="item" data-value="0">전체</div>
-                  <div class="item active selected" data-value="1">미완료</div>
-                  <div class="item" data-value="2">완료</div>
+                    <div class="item" data-value="0">전체</div>
+                    <div class="item active selected" data-value="1">미완료</div>
+                    <div class="item" data-value="2">완료</div>
                 </div>
             </div>
             <div class="ui calendar clear_block" id="start_date">
                 <div class="ui input left icon">
                     <i class="calendar icon"></i>
-                    <input type="text" placeholder="접수날짜" name="date" class="short_input_date" autocomplete="off" value="">
+                    <input type="text" placeholder="접수날짜" name="date" class="short_input_date" autocomplete="off"
+                        value="">
                 </div>
             </div>
             <label>~</label>
             <div class="ui calendar clear_block" id="end_date">
                 <div class="ui input left icon">
                     <i class="calendar icon"></i>
-                    <input type="text" placeholder="접수날짜" name="date" class="short_input_date" autocomplete="off" value="">
+                    <input type="text" placeholder="접수날짜" name="date" class="short_input_date" autocomplete="off"
+                        value="">
                 </div>
             </div>
             <div class="right_floated">
@@ -55,16 +62,16 @@
                     <i class="filter icon"></i>
                     <span class="text">검색 필터</span>
                     <div class="menu">
-                      <div class="item">이름</div>
-                      <div class="item">휴대폰번호</div>
-                      <div class="item">제목</div>
-                      <div class="item">내용</div>
+                        <div class="item">이름</div>
+                        <div class="item">휴대폰번호</div>
+                        <div class="item">제목</div>
+                        <div class="item">내용</div>
                     </div>
                 </div>
                 <div class="ui action input" style="margin-right:0.5em">
                     <input type="text" placeholder="Keyword">
                     <button class="ui icon blue button">
-                      <i class="search icon"></i>
+                        <i class="search icon"></i>
                     </button>
                 </div>
                 <button class="ui button">삭제</button>
@@ -73,69 +80,71 @@
 
         <table class="ui celled padded table">
             <thead>
-            <tr>
-              <th>
-                <div class="ui checkbox">
-                    <input type="checkbox" name="check_all">
-                    <label></label>
-                </div>                  
-              </th>
-              <!-- <th class="single line">회원번호</th> -->
-              <th>회원명</th>
-              <th>휴대폰번호</th>
-              <th>제목</th>
-              <th>답변 여부</th>
-              <th>답변 일시</th>
-              <th>담당자</th>
-              <th>접수일</th>
-              <th></th>
-            </tr>
+                <tr>
+                    <th>
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="check_all">
+                            <label></label>
+                        </div>
+                    </th>
+                    <!-- <th class="single line">회원번호</th> -->
+                    <th>회원명</th>
+                    <th>휴대폰번호</th>
+                    <th>제목</th>
+                    <th>답변 여부</th>
+                    <th>답변 일시</th>
+                    <th>담당자</th>
+                    <th>접수일</th>
+                    <th></th>
+                </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>
-                    <div class="ui checkbox">
-                        <input type="checkbox" name="check">
-                        <label></label>
-                    </div>
-                </td>
-                <!-- <td>112</td> -->
-                <td>홍길동</td>
-                <td>010-1111-1111</td>
-                <td>프사가 당했어요</td>
-                <td>
-                    <i class="check circle blue large icon"></i>
-                </td>
-                <td>2022.03.02 16:12:10</td>
-                <td>정다은<br>(아이디)</td>
-                <td>2022.03.02 16:12:10</td>
-                <td>
-                    <a href="../../../views/cs/qna/detail.html" class="ui tiny green inverted button">상세보기</a>
-                    <a href="../../../views/cs/qna/detail.html?mode=reply" class="ui tiny orange inverted button">답변작성</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                    <div class="ui checkbox">
-                        <input type="checkbox" name="check">
-                        <label></label>
-                    </div>
-                </td>
-                <!-- <td>111</td> -->
-                <td>홍길동</td>
-                <td>010-1111-1111</td>
-                <td>계정이 이상해요</td>
-                <td>
-                    <i class="close large icon"></i>
-                </td>
-                <td>2022.03.02 16:12:10</td>
-                <td>정다은<br>(아이디)</td>
-                <td></td>
-                <td>
-                    <a href="../../../views/cs/qna/detail.html" class="ui tiny green inverted button">상세보기</a>
-                    <a href="../../../views/cs/qna/detail.html?mode=reply" class="ui tiny orange inverted button">답변작성</a>
-                </td>
-              </tr>
+                <tr>
+                    <td>
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="check">
+                            <label></label>
+                        </div>
+                    </td>
+                    <!-- <td>112</td> -->
+                    <td>홍길동</td>
+                    <td>010-1111-1111</td>
+                    <td>프사가 당했어요</td>
+                    <td>
+                        <i class="check circle blue large icon"></i>
+                    </td>
+                    <td>2022.03.02 16:12:10</td>
+                    <td>정다은<br>(아이디)</td>
+                    <td>2022.03.02 16:12:10</td>
+                    <td>
+                        <a href="../../../views/cs/qna/detail.html" class="ui tiny green inverted button">상세보기</a>
+                        <a href="../../../views/cs/qna/detail.html?mode=reply"
+                            class="ui tiny orange inverted button">답변작성</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="check">
+                            <label></label>
+                        </div>
+                    </td>
+                    <!-- <td>111</td> -->
+                    <td>홍길동</td>
+                    <td>010-1111-1111</td>
+                    <td>계정이 이상해요</td>
+                    <td>
+                        <i class="close large icon"></i>
+                    </td>
+                    <td>2022.03.02 16:12:10</td>
+                    <td>정다은<br>(아이디)</td>
+                    <td></td>
+                    <td>
+                        <a href="../../../views/cs/qna/detail.html" class="ui tiny green inverted button">상세보기</a>
+                        <a href="../../../views/cs/qna/detail.html?mode=reply"
+                            class="ui tiny orange inverted button">답변작성</a>
+                    </td>
+                </tr>
             </tbody>
             <!-- pagination -->
             <tfoot>
@@ -156,13 +165,12 @@
                     </th>
                 </tr>
             </tfoot>
-          </table>
-
+        </table>
     </div>
-    
 </body>
 <script>
     $("#header").load("../../../views/header.html");
-    $("#snb").load("../../../views/nav.html"); 
+    $("#snb").load("../../../views/nav.html");
 </script>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,12 +11,14 @@
 
     <script type="text/javascript" src="../../../public/scripts/lib/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="../../../public/scripts/lib/semantic.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.js"></script>
-    
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.js"></script>
+
     <script type="text/javascript" src="../../../public/scripts/common.js"></script>
     <script type="text/javascript" src="../../../public/scripts/certification.js"></script>
     <script type="text/javascript" src="../../../public/scripts/calendar.js"></script>
 </head>
+
 <body>
     <header id="header" include-html="/views/header.html"></header>
     <nav id="snb" include-html="/views/nav.html"></nav>
@@ -36,14 +39,14 @@
                     <i class="filter icon"></i>
                     <span class="text">검색 필터</span>
                     <div class="menu">
-                      <div class="item">제목</div>
-                      <div class="item">내용</div>
+                        <div class="item">제목</div>
+                        <div class="item">내용</div>
                     </div>
                 </div>
                 <div class="ui action input" style="margin-right:0.5em">
                     <input type="text" placeholder="Keyword">
                     <button class="ui icon blue button">
-                      <i class="search icon"></i>
+                        <i class="search icon"></i>
                     </button>
                 </div>
             </div>
@@ -51,52 +54,52 @@
 
         <table class="ui celled padded table" style="margin-top:65px">
             <thead>
-            <tr>
-              <th>
-                <div class="ui checkbox">
-                    <input type="checkbox" name="check_all">
-                    <label></label>
-                </div>                  
-              </th>
-              <th class="single line">제목</th>
-              <th>등록자</th>
-              <th>등록일</th>
-              <th></th>
-            </tr>
+                <tr>
+                    <th>
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="check_all">
+                            <label></label>
+                        </div>
+                    </th>
+                    <th class="single line">제목</th>
+                    <th>등록자</th>
+                    <th>등록일</th>
+                    <th></th>
+                </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>
-                    <div class="ui checkbox">
-                        <input type="checkbox" name="check">
-                        <label></label>
-                    </div>
-                </td>
-                <td>공지사항 제목 표시되는 곳</td>
-                <td>정다은 (아이디)</td>
-                <td>2022.03.02 16:12:10</td>
-                <td>
-                    <a href="../../../views/cs/notice/detail.html" class="ui green inverted tiny button">
-                        보기 및 수정
-                    </a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                    <div class="ui checkbox">
-                        <input type="checkbox" name="check">
-                        <label></label>
-                    </div>
-                </td>
-                <td>개인보호정책 공지</td>
-                <td>정다은 (아이디)</td>
-                <td>2022.03.02 16:12:10</td>
-                <td>
-                    <a href="../../../views/cs/notice/detail.html" class="ui green inverted tiny button">
-                        보기 및 수정
-                    </a>
-                </td>
-              </tr>              
+                <tr>
+                    <td>
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="check">
+                            <label></label>
+                        </div>
+                    </td>
+                    <td>공지사항 제목 표시되는 곳</td>
+                    <td>정다은 (아이디)</td>
+                    <td>2022.03.02 16:12:10</td>
+                    <td>
+                        <a href="../../../views/cs/notice/detail.html" class="ui green inverted tiny button">
+                            보기 및 수정
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="check">
+                            <label></label>
+                        </div>
+                    </td>
+                    <td>개인보호정책 공지</td>
+                    <td>정다은 (아이디)</td>
+                    <td>2022.03.02 16:12:10</td>
+                    <td>
+                        <a href="../../../views/cs/notice/detail.html" class="ui green inverted tiny button">
+                            보기 및 수정
+                        </a>
+                    </td>
+                </tr>
             </tbody>
             <!-- pagination -->
             <tfoot>
@@ -117,13 +120,14 @@
                     </th>
                 </tr>
             </tfoot>
-          </table>
+        </table>
 
     </div>
-    
+
 </body>
 <script>
     $("#header").load("../../../views/header.html");
-    $("#snb").load("../../../views/nav.html"); 
+    $("#snb").load("../../../views/nav.html");
 </script>
+
 </html>

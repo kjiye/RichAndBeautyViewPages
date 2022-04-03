@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +11,13 @@
 
     <script type="text/javascript" src="../../../public/scripts/lib/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="../../../public/scripts/lib/semantic.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.js"></script>
-    
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.js"></script>
+
     <script type="text/javascript" src="../../../public/scripts/common.js"></script>
     <script type="text/javascript" src="../../../public/scripts/calendar.js"></script>
 </head>
+
 <body>
     <header id="header" include-html="/views/header.html"></header>
     <nav id="snb" include-html="/views/nav.html"></nav>
@@ -30,9 +33,9 @@
                 <!-- <div class="default text">처리</div> -->
                 <div class="text">미완료</div>
                 <div class="menu">
-                  <div class="item" data-value="0">전체</div>
-                  <div class="item" data-value="1">완료</div>
-                  <div class="item active selected" data-value="2">미완료</div>
+                    <div class="item" data-value="0">전체</div>
+                    <div class="item" data-value="1">완료</div>
+                    <div class="item active selected" data-value="2">미완료</div>
                 </div>
             </div>
             <div class="ui selection dropdown right_gap">
@@ -40,12 +43,12 @@
                 <i class="dropdown icon"></i>
                 <div class="default text">구분</div>
                 <div class="menu">
-                  <div class="item" data-value="0">전체</div>
-                  <div class="item" data-value="1">파티</div>
-                  <div class="item" data-value="2">상세 프로필</div>
-                  <div class="item" data-value="3">커뮤니티</div>
+                    <div class="item" data-value="0">전체</div>
+                    <div class="item" data-value="1">파티</div>
+                    <div class="item" data-value="2">상세 프로필</div>
+                    <div class="item" data-value="3">커뮤니티</div>
                 </div>
-            </div>            
+            </div>
 
             <div class="right_floated">
 
@@ -53,15 +56,15 @@
                     <i class="filter icon"></i>
                     <span class="text">검색 필터</span>
                     <div class="menu">
-                      <div class="item">이름</div>
-                      <div class="item">회원번호</div>
-                      <div class="item">휴대폰번호</div>
+                        <div class="item">이름</div>
+                        <div class="item">회원번호</div>
+                        <div class="item">휴대폰번호</div>
                     </div>
                 </div>
                 <div class="ui action input" style="margin-right:0.5em">
                     <input type="text" placeholder="Keyword">
                     <button class="ui icon blue button">
-                      <i class="search icon"></i>
+                        <i class="search icon"></i>
                     </button>
                 </div>
                 <button class="ui button">삭제</button>
@@ -71,74 +74,77 @@
                 </button>
             </div>
         </div>
-
         <table class="ui celled padded table list">
             <thead>
-            <tr>
-              <th class="single line">
-                <div class="ui checkbox">
-                    <input type="checkbox" name="check_all">
-                    <label></label>
-                </div>
-              </th>
-              <th>신고접수일</th>
-              <th>신고자</th>
-              <th>피신고자</th>
-              <th>신고구분</th>
-              <th>신고사유</th>
-              <th>처리여부</th>
-              <th>최종처리자</th>
-              <th>처리일</th>
-              <th></th>
-            </tr>
+                <tr>
+                    <th class="single line">
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="check_all">
+                            <label></label>
+                        </div>
+                    </th>
+                    <th>신고접수일</th>
+                    <th>신고자</th>
+                    <th>피신고자</th>
+                    <th>신고구분</th>
+                    <th>신고사유</th>
+                    <th>처리여부</th>
+                    <th>최종처리자</th>
+                    <th>처리일</th>
+                    <th></th>
+                </tr>
             </thead>
             <tbody>
-              <tr class="ui warning">
-                <td>
-                    <div class="ui checkbox">
-                        <input type="checkbox" name="check">
-                        <label></label>
-                    </div>                    
-                </td>
-                <td>2022.01.23</td>
-                <td>
-                    <a class="nickname" href="../../../views/account/member/detail.html">회원닉네임<br>(010-1234-1234)</a>
-                </td>
-                <td>
-                    <a class="nickname" href="../../../views/account/member/detail.html">회원닉네임<br>(010-1111-1111)</a>
-                </td>
-                <td>파티</td>
-                <td>개인 연락처 및 SNS 정보 공유</td>
-                <td>미완료</td>
-                <td>정다은 (ID)</td>
-                <td>-</td>
-                <td>
-                    <a href="../../../views/cs/report/detail.html" class="ui green tiny inverted button">보기</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                    <div class="ui checkbox">
-                        <input type="checkbox" name="check">
-                        <label></label>
-                    </div>                    
-                </td>
-                <td>2022.01.23</td>
-                <td>
-                    <a class="nickname" href="../../../views/account/member/detail.html">회원닉네임<br>(010-1234-1234)</a>
-                </td>
-                <td>
-                    <a class="nickname" href="../../../views/account/member/detail.html">회원닉네임<br>(010-1111-1111)</a>
-                </td>
-                <td>상세 프로필</td>
-                <td>-</td>
-                <td>완료</td>
-                <td>정다은 (ID)</td>
-                <td>2022.04.02</td>
-                <td>
-                    <a href="../../../views/cs/report/detail.html" class="ui green tiny inverted button">보기</a>
-                </td>
-              </tr>              
+                <tr class="ui warning">
+                    <td>
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="check">
+                            <label></label>
+                        </div>
+                    </td>
+                    <td>2022.01.23</td>
+                    <td>
+                        <a class="nickname"
+                            href="../../../views/account/member/detail.html">회원닉네임<br>(010-1234-1234)</a>
+                    </td>
+                    <td>
+                        <a class="nickname"
+                            href="../../../views/account/member/detail.html">회원닉네임<br>(010-1111-1111)</a>
+                    </td>
+                    <td>파티</td>
+                    <td>개인 연락처 및 SNS 정보 공유</td>
+                    <td>미완료</td>
+                    <td>정다은 (ID)</td>
+                    <td>-</td>
+                    <td>
+                        <a href="../../../views/cs/report/detail.html" class="ui green tiny inverted button">보기</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="check">
+                            <label></label>
+                        </div>
+                    </td>
+                    <td>2022.01.23</td>
+                    <td>
+                        <a class="nickname"
+                            href="../../../views/account/member/detail.html">회원닉네임<br>(010-1234-1234)</a>
+                    </td>
+                    <td>
+                        <a class="nickname"
+                            href="../../../views/account/member/detail.html">회원닉네임<br>(010-1111-1111)</a>
+                    </td>
+                    <td>상세 프로필</td>
+                    <td>-</td>
+                    <td>완료</td>
+                    <td>정다은 (ID)</td>
+                    <td>2022.04.02</td>
+                    <td>
+                        <a href="../../../views/cs/report/detail.html" class="ui green tiny inverted button">보기</a>
+                    </td>
+                </tr>
             </tbody>
             <!-- pagination -->
             <tfoot>
@@ -159,13 +165,14 @@
                     </th>
                 </tr>
             </tfoot>
-          </table>
+        </table>
 
     </div>
-    
+
 </body>
 <script>
     $("#header").load("../../../views/header.html");
-    $("#snb").load("../../../views/nav.html"); 
+    $("#snb").load("../../../views/nav.html");
 </script>
+
 </html>

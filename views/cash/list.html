@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,12 +11,14 @@
 
     <script type="text/javascript" src="../../public/scripts/lib/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="../../public/scripts/lib/semantic.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.js"></script>
-    
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.js"></script>
+
     <script type="text/javascript" src="../../public/scripts/common.js"></script>
     <script type="text/javascript" src="../../public/scripts/calendar.js"></script>
     <script type="text/javascript" src="../../public/scripts/cash.js"></script>
 </head>
+
 <body>
     <header id="header" include-html="/views/header.html"></header>
     <nav id="snb" include-html="/views/nav.html"></nav>
@@ -28,16 +31,18 @@
             <div class="ui calendar clear_block" id="start_date">
                 <div class="ui input left icon">
                     <i class="calendar icon"></i>
-                    <input type="text" placeholder="기준 시작일" name="date" class="short_input_date" autocomplete="off" value="">
+                    <input type="text" placeholder="기준 시작일" name="date" class="short_input_date" autocomplete="off"
+                        value="">
                 </div>
             </div>
             <label>~</label>
             <div class="ui calendar clear_block" id="end_date">
                 <div class="ui input left icon">
                     <i class="calendar icon"></i>
-                    <input type="text" placeholder="기준 종료일" name="date" class="short_input_date" autocomplete="off" value="">
+                    <input type="text" placeholder="기준 종료일" name="date" class="short_input_date" autocomplete="off"
+                        value="">
                 </div>
-            </div>            
+            </div>
             <button class="ui blue button left_margin">
                 <i class="search icon"></i>
                 조회
@@ -46,48 +51,48 @@
         <!-- table -->
         <table class="ui celled padded table list" style="margin-top:65px;">
             <thead>
-            <tr>
-              <th class="single line">No.</th>
-              <th>구분</th>
-              <th>캐시수량</th>
-              <th>대상 인원</th>
-              <th>푸시 발송여부</th>
-              <th>담당자</th>
-              <th>푸시 발송 및 캐시 상세</th>
-              <th>처리일시</th>
-            </tr>
+                <tr>
+                    <th class="single line">No.</th>
+                    <th>구분</th>
+                    <th>캐시수량</th>
+                    <th>대상 인원</th>
+                    <th>푸시 발송여부</th>
+                    <th>담당자</th>
+                    <th>푸시 발송 및 캐시 상세</th>
+                    <th>처리일시</th>
+                </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>2</td>
-                <td>지급</td>
-                <td>20개</td>
-                <td>1,234명</td>
-                <td>
-                    <i class="check circle blue large icon"></i>
-                </td>
-                <td>김지현 (ID)</td>
-                <td>
-                    <button class="ui tiny orange inverted button send_push">푸시발송</button>
-                    <a href="../../views/cash/detail.html" class="ui tiny green inverted button">상세보기</a>
-                </td>
-                <td>2022.03.02 16:12:10</td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>지급</td>
-                <td>20개</td>
-                <td>1,234명</td>
-                <td>
-                    <i class="close large icon"></i>
-                </td>
-                <td>김지현 (ID)</td>
-                <td>
-                    <button class="ui tiny orange inverted button send_push">푸시발송</button>
-                    <a href="../../views/cash/detail.html" class="ui tiny green inverted button">상세보기</a>
-                </td>
-                <td>2022.03.02 16:12:10</td>
-              </tr>              
+                <tr>
+                    <td>2</td>
+                    <td>지급</td>
+                    <td>20개</td>
+                    <td>1,234명</td>
+                    <td>
+                        <i class="check circle blue large icon"></i>
+                    </td>
+                    <td>김지현 (ID)</td>
+                    <td>
+                        <button class="ui tiny orange inverted button send_push">푸시발송</button>
+                        <a href="../../views/cash/detail.html" class="ui tiny green inverted button">상세보기</a>
+                    </td>
+                    <td>2022.03.02 16:12:10</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>지급</td>
+                    <td>20개</td>
+                    <td>1,234명</td>
+                    <td>
+                        <i class="close large icon"></i>
+                    </td>
+                    <td>김지현 (ID)</td>
+                    <td>
+                        <button class="ui tiny orange inverted button send_push">푸시발송</button>
+                        <a href="../../views/cash/detail.html" class="ui tiny green inverted button">상세보기</a>
+                    </td>
+                    <td>2022.03.02 16:12:10</td>
+                </tr>
             </tbody>
             <!-- pagination -->
             <tfoot>
@@ -121,7 +126,7 @@
             <!-- 제목 내용 입력창 -->
             <div class="description">
                 <h4 class="ui header">제목</h4>
-            </div>                    
+            </div>
             <div class="ui fluid icon input top_gap">
                 <input type="text" placeholder="20자 이내로 입력해주세요" value="">
             </div>
@@ -135,15 +140,16 @@
         <div class="actions">
             <div class="ui black deny button">취소</div>
             <div id="push_action" class="ui positive right labeled icon button">
-              발송
-              <i class="checkmark icon"></i>
+                발송
+                <i class="checkmark icon"></i>
             </div>
-          </div>
-      </div>         
+        </div>
+    </div>
 
 </body>
 <script>
     $("#header").load("../../views/header.html");
-    $("#snb").load("../../views/nav.html"); 
+    $("#snb").load("../../views/nav.html");
 </script>
+
 </html>

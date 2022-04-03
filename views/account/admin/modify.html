@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +11,13 @@
 
     <script type="text/javascript" src="../../../public/scripts/lib/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="../../../public/scripts/lib/semantic.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.js"></script>
-    
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.js"></script>
+
     <script type="text/javascript" src="../../../public/scripts/common.js"></script>
     <script type="text/javascript" src="../../../public/scripts/admin.js"></script>
 </head>
+
 <body>
     <header id="header" include-html="/views/header.html"></header>
     <nav id="snb" include-html="/views/nav.html"></nav>
@@ -23,59 +26,60 @@
         <h3 class="ui header underline">
             <div class="content">관리자 정보 수정</div>
             <!-- <div class="sub header">관리자 정보를 수정하는 페이지입니다</div> -->
-        </h3>        
+        </h3>
 
         <table class="ui eight column table">
             <tbody>
-              <tr>
-                <!-- 이름, 전화번호 input  -->
-                <td class="light_gray">이름</td>
-                <td>
-                    <div class="ui input">
-                        <input type="text" placeholder="이름" value="홍길동">
-                    </div>                    
-                </td>
-                <td class="light_gray">휴대폰번호</td>
-                <td>
-                    <div class="ui input">
-                        <input type="text" placeholder="휴대폰번호" value="010-1111-1111">
-                    </div>                    
-                </td>
-                <td class="light_gray">ID</td>
-                <td>aa</td>
-                <!-- dropdown -->
-                <td class="light_gray">등급</td>
-                <td>
-                    <div class="ui dropdown">
-                        <div class="text">선택</div>
-                        <i class="dropdown icon"></i>
-                        <div class="menu">
-                          <div class="item">2 관리자</div>
-                          <div class="item">3 직원</div>
-                          <div class="item">4 아르바이트</div>
+                <tr>
+                    <!-- 이름, 전화번호 input  -->
+                    <td class="light_gray">이름</td>
+                    <td>
+                        <div class="ui input">
+                            <input type="text" placeholder="이름" value="홍길동">
                         </div>
-                      </div>                    
-                </td>
-              </tr>
-              <tr>
-                <td class="light_gray">가입일</td>
-                <td>aa</td>
-                <td class="light_gray">탈퇴일</td>
-                <td>aa</td>
-                <td class="light_gray">상태</td>
-                <td>aa</td>
-                <td class="light_gray">최근 접속일시</td>
-                <td>aa</td>
-              </tr>
+                    </td>
+                    <td class="light_gray">휴대폰번호</td>
+                    <td>
+                        <div class="ui input">
+                            <input type="text" placeholder="휴대폰번호" value="010-1111-1111">
+                        </div>
+                    </td>
+                    <td class="light_gray">ID</td>
+                    <td>aa</td>
+                    <!-- dropdown -->
+                    <td class="light_gray">등급</td>
+                    <td>
+                        <div class="ui dropdown">
+                            <div class="text">선택</div>
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <div class="item">2 관리자</div>
+                                <div class="item">3 직원</div>
+                                <div class="item">4 아르바이트</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="light_gray">가입일</td>
+                    <td>aa</td>
+                    <td class="light_gray">탈퇴일</td>
+                    <td>aa</td>
+                    <td class="light_gray">상태</td>
+                    <td>aa</td>
+                    <td class="light_gray">최근 접속일시</td>
+                    <td>aa</td>
+                </tr>
             </tbody>
         </table>
         <button id="modify" class="ui right floated green button">수정 완료</button>
     </div>
- 
-    
+
+
 </body>
 <script>
     $("#header").load("../../../views/header.html");
-    $("#snb").load("../../../views/nav.html"); 
+    $("#snb").load("../../../views/nav.html");
 </script>
+
 </html>

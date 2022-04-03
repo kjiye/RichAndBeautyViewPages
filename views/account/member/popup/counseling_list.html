@@ -1,87 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>상담 이력</title>
-    <link rel="stylesheet" href="../../../../public/stylesheets/style.css" />
-    <link rel="stylesheet" href="../../../../public/stylesheets/semantic.min.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상담 이력</title>
+  <link rel="stylesheet" href="../../../../public/stylesheets/style.css" />
+  <link rel="stylesheet" href="../../../../public/stylesheets/semantic.min.css" />
 
-    <script type="text/javascript" src="../../../../public/scripts/lib/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="../../../../public/scripts/lib/semantic.min.js"></script>
-    
-    <script type="text/javascript" src="../../../../public/scripts/common.js"></script>
+  <script type="text/javascript" src="../../../../public/scripts/lib/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="../../../../public/scripts/lib/semantic.min.js"></script>
+
+  <script type="text/javascript" src="../../../../public/scripts/common.js"></script>
 </head>
-<body class="popup_container">
-    <div class="ui raised clearing yellow segment">
-        <div class="ui labeled button" tabindex="0">
-            <div class="ui button">회원명</div>
-            <div class="ui basic label">
-              홍길동
-            </div>
-        </div>
-        <div class="ui labeled button" tabindex="0">
-            <div class="ui button">전화번호</div>
-            <div class="ui basic label">
-              010-1111-1111
-            </div>
-        </div>
-        <h2 class="ui header center">상담 이력</h2>
-        <form class="ui reply form">
-          <div class="right_floated">
-            <div class="ui selection dropdown right_gap">
-              <input type="hidden" name="gender">
-              <i class="dropdown icon"></i>
-              <!-- <div class="default text">구분 선택</div> -->
-              <div class="text">기타 일반 문의</div>
-              <div class="menu">
-                <div class="item active selected" data-value="0">기타 일반 문의</div>
-                <div class="item" data-value="1">매칭</div>
-                <div class="item" data-value="2">결제/환불</div>
-                <div class="item" data-value="3">오류</div>
-                <div class="item" data-value="4">민원</div>
-                <div class="item" data-value="5">인증/심사</div>
-                <div class="item" data-value="6">이용제한</div>
-              </div>
-            </div>
-            <button class="ui green labeled submit icon button">
-              <i class="icon edit"></i> 등록
-            </button>
-          </div>
-          <div class="field">
-            <textarea></textarea>
-          </div>
-        </form>
-        <div class="table_container">
-        <table class="ui celled table">
-            <thead>
-              <tr><th>No</th>
-              <th>담당자</th>
-              <th>일시</th>
-              <th>구분</th>
-              <th>내용</th>
-            </tr></thead>
-            <tbody>
-              <tr>
-                <td data-label="index">2</td>
-                <td data-label="charge">김지현 (ID)</td>
-                <td data-label="date">2022.03.11 11:15:02</td>
-                <td data-label="type">매칭</td>
-                <td data-label="type" style="max-width:250px">담당자의 상담 내용이 표시되는 곳..담당자의 상담 내용이 표시되는 곳..담당자의 상담 내용이 표시되는 곳..담당자의 상담 내용이 표시되는 곳</td>
-              </tr>
-              <tr>
-                <td data-label="index">1</td>
-                <td data-label="charge">김지현 (ID)</td>
-                <td data-label="date">2022.03.11 11:15:02</td>
-                <td data-label="type">오류</td>
-                <td data-label="type" style="max-width:250px">담당자의 상담 내용이 표시되는 곳..담당자의 상담 내용이 표시되는 곳..담당자의 상담 내용이 표시되는 곳..담당자의 상담 내용이 표시되는 곳</td>
-              </tr>
-            </tbody>
-        </table>
-        </div>
-    </div>
 
-      
+<body class="popup_container">
+  <div class="ui raised clearing yellow segment">
+    <div class="ui labeled button" tabindex="0">
+      <div class="ui button">회원명</div>
+      <div class="ui basic label">
+        홍길동
+      </div>
+    </div>
+    <div class="ui labeled button" tabindex="0">
+      <div class="ui button">전화번호</div>
+      <div class="ui basic label">
+        010-1111-1111
+      </div>
+    </div>
+    <h2 class="ui header center">상담 이력</h2>
+    <form class="ui reply form">
+      <div class="right_floated">
+        <div class="ui selection dropdown right_gap">
+          <input type="hidden" name="gender">
+          <i class="dropdown icon"></i>
+          <!-- <div class="default text">구분 선택</div> -->
+          <div class="text">기타 일반 문의</div>
+          <div class="menu">
+            <div class="item active selected" data-value="0">기타 일반 문의</div>
+            <div class="item" data-value="1">매칭</div>
+            <div class="item" data-value="2">결제/환불</div>
+            <div class="item" data-value="3">오류</div>
+            <div class="item" data-value="4">민원</div>
+            <div class="item" data-value="5">인증/심사</div>
+            <div class="item" data-value="6">이용제한</div>
+          </div>
+        </div>
+        <button class="ui green labeled submit icon button">
+          <i class="icon edit"></i> 등록
+        </button>
+      </div>
+      <div class="field">
+        <textarea></textarea>
+      </div>
+    </form>
+    <div class="table_container">
+      <table class="ui celled table">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>담당자</th>
+            <th>일시</th>
+            <th>구분</th>
+            <th>내용</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="index">2</td>
+            <td data-label="charge">김지현 (ID)</td>
+            <td data-label="date">2022.03.11 11:15:02</td>
+            <td data-label="type">매칭</td>
+            <td data-label="type" style="max-width:250px">담당자의 상담 내용이 표시되는 곳..담당자의 상담 내용이 표시되는 곳..담당자의 상담 내용이 표시되는
+              곳..담당자의 상담 내용이 표시되는 곳</td>
+          </tr>
+          <tr>
+            <td data-label="index">1</td>
+            <td data-label="charge">김지현 (ID)</td>
+            <td data-label="date">2022.03.11 11:15:02</td>
+            <td data-label="type">오류</td>
+            <td data-label="type" style="max-width:250px">담당자의 상담 내용이 표시되는 곳..담당자의 상담 내용이 표시되는 곳..담당자의 상담 내용이 표시되는
+              곳..담당자의 상담 내용이 표시되는 곳</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
 </body>
+
 </html>

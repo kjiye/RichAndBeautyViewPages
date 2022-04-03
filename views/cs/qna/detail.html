@@ -1,87 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>문의내역 조회</title>
-    <link rel="stylesheet" href="../../../public/stylesheets/style.css" />
-    <link rel="stylesheet" href="../../../public/stylesheets/semantic.min.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문의내역 조회</title>
+  <link rel="stylesheet" href="../../../public/stylesheets/style.css" />
+  <link rel="stylesheet" href="../../../public/stylesheets/semantic.min.css" />
 
-    <script type="text/javascript" src="../../../public/scripts/lib/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="../../../public/scripts/lib/semantic.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.js"></script>
-    
-    <script type="text/javascript" src="../../../public/scripts/common.js"></script>
-    <script type="text/javascript" src="../../../public/scripts/qna.js"></script>
+  <script type="text/javascript" src="../../../public/scripts/lib/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="../../../public/scripts/lib/semantic.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.js"></script>
+
+  <script type="text/javascript" src="../../../public/scripts/common.js"></script>
+  <script type="text/javascript" src="../../../public/scripts/qna.js"></script>
 </head>
-<body>
-    <header id="header" include-html="/views/header.html"></header>
-    <nav id="snb" include-html="/views/nav.html"></nav>
 
-    <div id="content">
-        <h3 class="ui header underline">
-            <div class="content">문의내역 조회</div>
-        </h3>        
+<body>
+  <header id="header" include-html="/views/header.html"></header>
+  <nav id="snb" include-html="/views/nav.html"></nav>
+
+  <div id="content">
+    <h3 class="ui header underline">
+      <div class="content">문의내역 조회</div>
+    </h3>
     <div class="ui horizontal">
-        <button class="ui button qna_history">문의이력</button>
-        <div class="right_floated">
-            <button class="ui blue button write_reply">답변작성</button>
-            <button class="ui blue button reg_reply none">완료</button>
-            <a href="../../../views/cs/qna/list.html" class="ui orange button">목록</a>
-        </div>
+      <button class="ui button qna_history">문의이력</button>
+      <div class="right_floated">
+        <button class="ui blue button write_reply">답변작성</button>
+        <button class="ui blue button reg_reply none">완료</button>
+        <a href="../../../views/cs/qna/list.html" class="ui orange button">목록</a>
+      </div>
     </div>
-        <table class="ui definition table">
-            <tbody>
-              <tr>
-                <td>회원명</td>
-                <td>홍길동</td>
-              </tr>
-              <tr>
-                <td>휴대폰번호</td>
-                <td>010-6417-3203</td>
-              </tr>
-              <tr>
-                <td>제목</td>
-                <td>프사가 당했어요</td>
-              </tr>
-              <tr>
-                <td>내용</td>
-                <td>고객이 등록한 내용이 표시되는 곳</td>
-              </tr>
-              <tr>
-                <td>등록사진</td>
-                <td>
-                    <img src="https://semantic-ui.com/images/wireframe/image.png" width="200"/>
-                    <img src="https://semantic-ui.com/images/wireframe/image.png" width="200"/>
-                    <img src="https://semantic-ui.com/images/wireframe/image.png" width="200"/>
-                </td>
-              </tr>
-              <tr>
-                <td>답변여부</td>
-                <td>아니오</td>
-              </tr> 
-              <!-- 답변내용 -->
-              <tr class="none">
-                <td>답변내용</td>
-                <td>
-                    <textarea id="qna_reply" placeholder="답변 내용을 입력해주세요"></textarea>
-                </td>
-              </tr>
-              <tr>
-                <td>접수일시</td>
-                <td>2022.03.01 11:11:11</td>
-              </tr>                                         
-          </tbody></table>           
-    </div>
- 
-    
+    <table class="ui definition table">
+      <tbody>
+        <tr>
+          <td>회원명</td>
+          <td>홍길동</td>
+        </tr>
+        <tr>
+          <td>휴대폰번호</td>
+          <td>010-6417-3203</td>
+        </tr>
+        <tr>
+          <td>제목</td>
+          <td>프사가 당했어요</td>
+        </tr>
+        <tr>
+          <td>내용</td>
+          <td>고객이 등록한 내용이 표시되는 곳</td>
+        </tr>
+        <tr>
+          <td>등록사진</td>
+          <td>
+            <img src="https://semantic-ui.com/images/wireframe/image.png" width="200" />
+            <img src="https://semantic-ui.com/images/wireframe/image.png" width="200" />
+            <img src="https://semantic-ui.com/images/wireframe/image.png" width="200" />
+          </td>
+        </tr>
+        <tr>
+          <td>답변여부</td>
+          <td>아니오</td>
+        </tr>
+        <!-- 답변내용 -->
+        <tr class="none">
+          <td>답변내용</td>
+          <td>
+            <textarea id="qna_reply" placeholder="답변 내용을 입력해주세요"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>접수일시</td>
+          <td>2022.03.01 11:11:11</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
 <script>
-    $("#header").load("../../../views/header.html");
-    $("#snb").load("../../../views/nav.html"); 
-
-    // page mode 관련 스트립트 구현
-
+  $("#header").load("../../../views/header.html");
+  $("#snb").load("../../../views/nav.html");
 </script>
+
 </html>

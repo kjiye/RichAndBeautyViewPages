@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,12 +11,14 @@
 
     <script type="text/javascript" src="../../public/scripts/lib/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="../../public/scripts/lib/semantic.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.js"></script>
-    
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.js"></script>
+
     <script type="text/javascript" src="../../public/scripts/common.js"></script>
     <script type="text/javascript" src="../../public/scripts/calendar.js"></script>
     <script type="text/javascript" src="../../public/scripts/cash.js"></script>
 </head>
+
 <body>
     <header id="header" include-html="/views/header.html"></header>
     <nav id="snb" include-html="/views/nav.html"></nav>
@@ -28,101 +31,103 @@
         <div class="ui form form_box">
             <div class="five fields">
                 <div class="field">
-                  <label>성별</label>
-                  <select class="ui dropdown">
-                    <option value="">전체</option>
-                    <option value="0">남자</option>
-                    <option value="1">여자</option>
-                  </select>                
+                    <label>성별</label>
+                    <select class="ui dropdown">
+                        <option value="">전체</option>
+                        <option value="0">남자</option>
+                        <option value="1">여자</option>
+                    </select>
                 </div>
                 <div class="field">
-                  <label>상태</label>
-                  <select class="ui dropdown">
-                    <option value="">전체</option>
-                    <option value="0">정상</option>
-                    <option value="1">휴면</option>
-                    <option value="2">재가입</option>
-                  </select>                
+                    <label>상태</label>
+                    <select class="ui dropdown">
+                        <option value="">전체</option>
+                        <option value="0">정상</option>
+                        <option value="1">휴면</option>
+                        <option value="2">재가입</option>
+                    </select>
                 </div>
                 <div class="field">
-                  <label>스펙</label>
-                  <select class="ui dropdown">
-                    <option value="">전체</option>
-                    <option value="0">매력심사</option>
-                    <option value="1">능력심사</option>
-                  </select>
+                    <label>스펙</label>
+                    <select class="ui dropdown">
+                        <option value="">전체</option>
+                        <option value="0">매력심사</option>
+                        <option value="1">능력심사</option>
+                    </select>
                 </div>
                 <div class="field">
-                  <label>매칭이성</label>
-                  <select class="ui dropdown">
-                    <option value="">전체</option>
-                    <option value="0">있음</option>
-                    <option value="1">없음</option>
-                  </select>
+                    <label>매칭이성</label>
+                    <select class="ui dropdown">
+                        <option value="">전체</option>
+                        <option value="0">있음</option>
+                        <option value="1">없음</option>
+                    </select>
                 </div>
                 <div class="field">
-                  <label>시작일</label>
-                  <div class="inline field">
-                      <div class="ui calendar" id="end_date">
-                          <div class="ui fluid input left icon">
-                              <i class="calendar icon"></i>
-                              <input type="text" placeholder="종료일" name="date" class="short_input_date" autocomplete="off" value="">
-                          </div>
-                      </div>                    
-                  </div>
-                </div>                            
-              </div>            
-            <div class="five fields">
-              <div class="field">
-                <label>나이(이상)</label>
-                <div class="inline field">
-                    <input type="text" placeholder="숫자만 입력"> 세
-                </div>
-              </div>
-              <div class="field">
-                <label>나이(이하)</label>
-                <div class="inline field">
-                    <input type="text" placeholder="숫자만 입력"> 세
-                </div>
-              </div>
-              <div class="field">
-                <label>보유캐시(이상)</label>
-                <div class="inline field">
-                    <input type="text" placeholder="숫자만 입력"> 개
-                </div>
-              </div>
-              <div class="field">
-                <label>보유캐시(이하)</label>
-                <div class="inline field">
-                    <input type="text" placeholder="숫자만 입력"> 개
-                </div>
-              </div>
-              <div class="field">
-                <label>종료일</label>
-                <div class="inline field">
-                    <div class="ui calendar" id="start_date">
-                        <div class="ui fluid input left icon">
-                            <i class="calendar icon"></i>
-                            <input type="text" placeholder="시작일" name="date" class="short_input_date" autocomplete="off" value="">
+                    <label>시작일</label>
+                    <div class="inline field">
+                        <div class="ui calendar" id="end_date">
+                            <div class="ui fluid input left icon">
+                                <i class="calendar icon"></i>
+                                <input type="text" placeholder="종료일" name="date" class="short_input_date"
+                                    autocomplete="off" value="">
+                            </div>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
-              </div>                            
+            </div>
+            <div class="five fields">
+                <div class="field">
+                    <label>나이(이상)</label>
+                    <div class="inline field">
+                        <input type="text" placeholder="숫자만 입력"> 세
+                    </div>
+                </div>
+                <div class="field">
+                    <label>나이(이하)</label>
+                    <div class="inline field">
+                        <input type="text" placeholder="숫자만 입력"> 세
+                    </div>
+                </div>
+                <div class="field">
+                    <label>보유캐시(이상)</label>
+                    <div class="inline field">
+                        <input type="text" placeholder="숫자만 입력"> 개
+                    </div>
+                </div>
+                <div class="field">
+                    <label>보유캐시(이하)</label>
+                    <div class="inline field">
+                        <input type="text" placeholder="숫자만 입력"> 개
+                    </div>
+                </div>
+                <div class="field">
+                    <label>종료일</label>
+                    <div class="inline field">
+                        <div class="ui calendar" id="start_date">
+                            <div class="ui fluid input left icon">
+                                <i class="calendar icon"></i>
+                                <input type="text" placeholder="시작일" name="date" class="short_input_date"
+                                    autocomplete="off" value="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="field">
                 <label>키워드</label>
                 <div class="inline field">
                     <div class="ui left action right input">
                         <div class="ui basic floating dropdown button">
-                        <div class="text">검색 필터</div>
-                        <i class="dropdown icon"></i>
-                        <div class="menu">
-                            <div class="item">이름</div>
-                            <div class="item">연락처</div>
-                        </div>
+                            <div class="text">검색 필터</div>
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <div class="item">이름</div>
+                                <div class="item">연락처</div>
+                            </div>
                         </div>
                         <input type="text" placeholder="Keyword">
-                    </div> 
+                    </div>
                     <button class="ui right floated blue button">
                         <i class="search icon"></i>
                         조회하기
@@ -135,7 +140,7 @@
             <div class="ui left icon input right_margin">
                 <input type="text" placeholder="캐시 수량 입력">
                 <i class="gem outline icon"></i>
-            </div>            
+            </div>
             <button id="pay" class="ui blue button left_margin">지급</button>
             <button id="take_back" class="ui orange button">회수</button>
         </div>
@@ -143,60 +148,60 @@
         <div class="table_container" style="margin-top:65px;">
             <table class="ui celled table list">
                 <thead>
-                  <tr>
-                    <th>
-                        <div class="ui checkbox">
-                            <input type="checkbox" name="check_all">
-                            <label></label>
-                        </div>
-                    </th>
-                    <th>회원명</th>
-                    <th>전화번호</th>
-                    <th>상태</th>
-                    <th>스펙</th>
-                    <th>매칭이력</th>
-                    <th>나이</th>
-                    <th>보유캐시</th>
-                    <th>가입일</th>
-                  </tr>
+                    <tr>
+                        <th>
+                            <div class="ui checkbox">
+                                <input type="checkbox" name="check_all">
+                                <label></label>
+                            </div>
+                        </th>
+                        <th>회원명</th>
+                        <th>전화번호</th>
+                        <th>상태</th>
+                        <th>스펙</th>
+                        <th>매칭이력</th>
+                        <th>나이</th>
+                        <th>보유캐시</th>
+                        <th>가입일</th>
+                    </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td data-label="checkbox">
-                        <div class="ui checkbox">
-                            <input type="checkbox" name="check">
-                            <label></label>
-                        </div>                        
-                    </td>
-                    <td class="sky_blue" data-label="name">홍길동</td>
-                    <td data-label="phone">010-1111-1111</td>
-                    <td data-label="status">정상</td>
-                    <td data-label="spec">능력심사</td>
-                    <td data-label="match">
-                        <i class="check circle blue large icon"></i>
-                    </td>
-                    <td data-label="age">22</td>
-                    <td data-label="cash">10</td>
-                    <td data-label="join_date">2021.11.13 19:08:00</td>
-                  </tr>
-                  <tr>
-                    <td data-label="checkbox">
-                        <div class="ui checkbox">
-                            <input type="checkbox" name="check">
-                            <label></label>
-                        </div>                        
-                    </td>
-                    <td class="light_red" data-label="name">홍길동</td>
-                    <td data-label="phone">010-1234-1234</td>
-                    <td data-label="status">정상</td>
-                    <td data-label="spec">매력심사</td>
-                    <td data-label="match">
-                        <i class="close large icon"></i>
-                    </td>
-                    <td data-label="age">22</td>
-                    <td data-label="cash">10</td>
-                    <td data-label="join_date">2021.11.13 19:08:00</td>
-                  </tr>                  
+                    <tr>
+                        <td data-label="checkbox">
+                            <div class="ui checkbox">
+                                <input type="checkbox" name="check">
+                                <label></label>
+                            </div>
+                        </td>
+                        <td class="sky_blue" data-label="name">홍길동</td>
+                        <td data-label="phone">010-1111-1111</td>
+                        <td data-label="status">정상</td>
+                        <td data-label="spec">능력심사</td>
+                        <td data-label="match">
+                            <i class="check circle blue large icon"></i>
+                        </td>
+                        <td data-label="age">22</td>
+                        <td data-label="cash">10</td>
+                        <td data-label="join_date">2021.11.13 19:08:00</td>
+                    </tr>
+                    <tr>
+                        <td data-label="checkbox">
+                            <div class="ui checkbox">
+                                <input type="checkbox" name="check">
+                                <label></label>
+                            </div>
+                        </td>
+                        <td class="light_red" data-label="name">홍길동</td>
+                        <td data-label="phone">010-1234-1234</td>
+                        <td data-label="status">정상</td>
+                        <td data-label="spec">매력심사</td>
+                        <td data-label="match">
+                            <i class="close large icon"></i>
+                        </td>
+                        <td data-label="age">22</td>
+                        <td data-label="cash">10</td>
+                        <td data-label="join_date">2021.11.13 19:08:00</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -204,6 +209,7 @@
 </body>
 <script>
     $("#header").load("../../views/header.html");
-    $("#snb").load("../../views/nav.html"); 
+    $("#snb").load("../../views/nav.html");
 </script>
+
 </html>

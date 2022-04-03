@@ -1,23 +1,23 @@
-const Calendar = (function($){
-    
+const Calendar = (function ($) {
+
     /**
      * 날짜 선택 캘린더 UI 관련 스크립트
      */
 
-     let textTwice = function(number){
+    let textTwice = function (number) {
         let zero = '';
         number = number.toString();
 
         if (number.length < 2) {
             for (let i = 0; i < 2 - number.length; i++)
-            zero += '0';
+                zero += '0';
         }
         return zero + number;
     };
 
     return {
-        init: function(){
-           $('#start_date').calendar({
+        init: function () {
+            $('#start_date').calendar({
                 type: 'date',
                 formatter: {
                     date: function (date, settings) {
@@ -42,14 +42,14 @@ const Calendar = (function($){
                 },
             });
             $('#time_picker').calendar({
-                type : 'time',
-                ampm : false,
+                type: 'time',
+                ampm: false,
             });
         }
     }
 
 }(jQuery));
 
-$(document).ready(function(){
+$(document).ready(function () {
     Calendar.init();
 });

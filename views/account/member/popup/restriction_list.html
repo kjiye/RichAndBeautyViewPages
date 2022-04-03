@@ -1,156 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>이용 제한</title>
-    <link rel="stylesheet" href="../../../../public/stylesheets/style.css" />
-    <link rel="stylesheet" href="../../../../public/stylesheets/semantic.min.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이용 제한</title>
+  <link rel="stylesheet" href="../../../../public/stylesheets/style.css" />
+  <link rel="stylesheet" href="../../../../public/stylesheets/semantic.min.css" />
 
-    <script type="text/javascript" src="../../../../public/scripts/lib/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="../../../../public/scripts/lib/semantic.min.js"></script>
-    
-    <script type="text/javascript" src="../../../../public/scripts/common.js"></script>
+  <script type="text/javascript" src="../../../../public/scripts/lib/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="../../../../public/scripts/lib/semantic.min.js"></script>
+
+  <script type="text/javascript" src="../../../../public/scripts/common.js"></script>
 </head>
-<body class="popup_container">
-    <div class="ui raised clearing red segment">
-        <div class="ui labeled button" tabindex="0">
-            <div class="ui button">회원명</div>
-            <div class="ui basic label">
-              홍길동
-            </div>
-        </div>
-        <div class="ui labeled button" tabindex="0">
-            <div class="ui button">전화번호</div>
-            <div class="ui basic label">
-              010-1111-1111
-            </div>
-        </div>
-        <h2 class="ui header center">이용 제한</h2>
-        <button class="ui right floated red button">등록</button>
-        <table class="ui celled table" style="margin-top:65px">
-            <thead>
-                <tr><th>구분</th>
-                <th>이용정지 기간 선택</th>
-                <th>특이사항</th>
-                <th>이용정지 회원 노출 사유</th>
-              </tr></thead>
-              <tbody>
-                <tr>
-                    <td data-label="restrict_type">
-                        <div class="ui dropdown">
-                            <div class="text">구분 선택</div>
-                            <i class="dropdown icon"></i>
-                            <div class="menu">
-                              <div class="item">이용정지</div>
-                              <div class="item">휴면</div>
-                              <div class="item">탈퇴</div>
-                            </div>
-                        </div>
-                    </td>
-                    <td data-label="restrict_period">
-                        <div class="ui dropdown">
-                            <div class="text">정지 기간 선택</div>
-                            <i class="dropdown icon"></i>
-                            <div class="menu">
-                              <div class="item">3일 정지</div>
-                              <div class="item">7일 정지</div>
-                              <div class="item">30일 정지</div>
-                              <div class="item">영구 정지</div>
-                            </div>
-                        </div>
-                    </td>
-                    <td data-label="restrict_note">
-                        <div class="ui input note">
-                            <input type="text" placeholder="특이사항을 입력해주세요">
-                        </div>
-                    </td>
-                    <td data-label="restrict_reason">
-                        <div class="ui dropdown">
-                            <div class="text">사유 선택</div>
-                            <i class="dropdown icon"></i>
-                            <div class="menu">
-                              <div class="item">내부 운영 기준 위반</div>
-                              <div class="item">개인정보 노출 (연락처, SNS)</div>
-                              <div class="item">사진, 명의 도용 의심</div>
-                              <div class="item">악의적인 특정인 비방, 비속어</div>
-                              <div class="item">반복적인 게시물 작성</div>
-                              <div class="item">회원 신고</div>
-                              <div class="item">서비스 운영 방해</div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-              </tbody>
-        </table>
-        <h4 class="ui horizontal divider header">
-            이용 제한 해제
-        </h4>
-        <button class="ui right floated blue button">해제</button>
-        <div class="table_container" style="margin-top:65px">
-        <table class="ui celled table">
-            <thead>
-              <tr>
-              <th>
-                <div class="ui checked checkbox">
-                    <input type="checkbox" checked>
-                    <label></label>
-                </div>                  
-              </th>
-              <th>No</th>
-              <th>구분</th>
-              <th>이용정지<br>기간</th>
-              <th>등록 일시</th>
-              <th>등록<br>담당자</th>
-              <th>특이사항</th>
-              <th>이용정지 회원<br>노출 사유</th>
-              <th>해제<br>사유</th>
-              <th>해제<br>일시</th>
-              <th>해제<br>담당자</th>
-            </tr></thead>
-            <tbody>
-              <tr>
-                <td data-label="checkboad">
-                    <div class="ui checked checkbox">
-                        <input type="checkbox" checked>
-                        <label></label>
-                    </div>                    
-                </td>
-                <td data-label="index">2</td>
-                <td data-label="type">이용정지</td>
-                <td data-label="period">30일</td>
-                <td data-label="restrict_date">2022.02.24 11:00:00</td>
-                <td data-label="restrict_charge">김지현 (ID)</td>
-                <td data-label="note">지속적인 비속어 도배</td>
-                <td data-label="restrict_reason">회원 신고</td>
-                <td data-label="derestrict_reason">상황 확인 완료</td>
-                <td data-label="derestrict_date">2022.02.25 16:11:00</td>
-                <td data-label="type">김지현 (ID)</td>
-              </tr>
-              <tr>
-                <td data-label="checkboad">
-                    <div class="ui checked checkbox">
-                        <input type="checkbox" checked>
-                        <label></label>
-                    </div>                    
-                </td>
-                <td data-label="index">2</td>
-                <td data-label="type">이용정지</td>
-                <td data-label="period">30일</td>
-                <td data-label="restrict_date">2022.02.24 11:00:00</td>
-                <td data-label="restrict_charge">김지현 (ID)</td>
-                <td data-label="note">지속적인 비속어 도배</td>
-                <td data-label="restrict_reason">회원 신고</td>
-                <td data-label="derestrict_reason">상황 확인 완료</td>
-                <td data-label="derestrict_date">2022.02.25 16:11:00</td>
-                <td data-label="type">김지현 (ID)</td>
-              </tr>              
-            </tbody>
-        </table>
-        </div>
-    </div>
 
-      
+<body class="popup_container">
+  <div class="ui raised clearing red segment">
+    <div class="ui labeled button" tabindex="0">
+      <div class="ui button">회원명</div>
+      <div class="ui basic label">
+        홍길동
+      </div>
+    </div>
+    <div class="ui labeled button" tabindex="0">
+      <div class="ui button">전화번호</div>
+      <div class="ui basic label">
+        010-1111-1111
+      </div>
+    </div>
+    <h2 class="ui header center">이용 제한</h2>
+    <button class="ui right floated red button">등록</button>
+    <table class="ui celled table" style="margin-top:65px">
+      <thead>
+        <tr>
+          <th>구분</th>
+          <th>이용정지 기간 선택</th>
+          <th>특이사항</th>
+          <th>이용정지 회원 노출 사유</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="restrict_type">
+            <div class="ui dropdown">
+              <div class="text">구분 선택</div>
+              <i class="dropdown icon"></i>
+              <div class="menu">
+                <div class="item">이용정지</div>
+                <div class="item">휴면</div>
+                <div class="item">탈퇴</div>
+              </div>
+            </div>
+          </td>
+          <td data-label="restrict_period">
+            <div class="ui dropdown">
+              <div class="text">정지 기간 선택</div>
+              <i class="dropdown icon"></i>
+              <div class="menu">
+                <div class="item">3일 정지</div>
+                <div class="item">7일 정지</div>
+                <div class="item">30일 정지</div>
+                <div class="item">영구 정지</div>
+              </div>
+            </div>
+          </td>
+          <td data-label="restrict_note">
+            <div class="ui input note">
+              <input type="text" placeholder="특이사항을 입력해주세요">
+            </div>
+          </td>
+          <td data-label="restrict_reason">
+            <div class="ui dropdown">
+              <div class="text">사유 선택</div>
+              <i class="dropdown icon"></i>
+              <div class="menu">
+                <div class="item">내부 운영 기준 위반</div>
+                <div class="item">개인정보 노출 (연락처, SNS)</div>
+                <div class="item">사진, 명의 도용 의심</div>
+                <div class="item">악의적인 특정인 비방, 비속어</div>
+                <div class="item">반복적인 게시물 작성</div>
+                <div class="item">회원 신고</div>
+                <div class="item">서비스 운영 방해</div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h4 class="ui horizontal divider header">
+      이용 제한 해제
+    </h4>
+    <button class="ui right floated blue button">해제</button>
+    <div class="table_container" style="margin-top:65px">
+      <table class="ui celled table">
+        <thead>
+          <tr>
+            <th>
+              <div class="ui checked checkbox">
+                <input type="checkbox" checked>
+                <label></label>
+              </div>
+            </th>
+            <th>No</th>
+            <th>구분</th>
+            <th>이용정지<br>기간</th>
+            <th>등록 일시</th>
+            <th>등록<br>담당자</th>
+            <th>특이사항</th>
+            <th>이용정지 회원<br>노출 사유</th>
+            <th>해제<br>사유</th>
+            <th>해제<br>일시</th>
+            <th>해제<br>담당자</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="checkboad">
+              <div class="ui checked checkbox">
+                <input type="checkbox" checked>
+                <label></label>
+              </div>
+            </td>
+            <td data-label="index">2</td>
+            <td data-label="type">이용정지</td>
+            <td data-label="period">30일</td>
+            <td data-label="restrict_date">2022.02.24 11:00:00</td>
+            <td data-label="restrict_charge">김지현 (ID)</td>
+            <td data-label="note">지속적인 비속어 도배</td>
+            <td data-label="restrict_reason">회원 신고</td>
+            <td data-label="derestrict_reason">상황 확인 완료</td>
+            <td data-label="derestrict_date">2022.02.25 16:11:00</td>
+            <td data-label="type">김지현 (ID)</td>
+          </tr>
+          <tr>
+            <td data-label="checkboad">
+              <div class="ui checked checkbox">
+                <input type="checkbox" checked>
+                <label></label>
+              </div>
+            </td>
+            <td data-label="index">2</td>
+            <td data-label="type">이용정지</td>
+            <td data-label="period">30일</td>
+            <td data-label="restrict_date">2022.02.24 11:00:00</td>
+            <td data-label="restrict_charge">김지현 (ID)</td>
+            <td data-label="note">지속적인 비속어 도배</td>
+            <td data-label="restrict_reason">회원 신고</td>
+            <td data-label="derestrict_reason">상황 확인 완료</td>
+            <td data-label="derestrict_date">2022.02.25 16:11:00</td>
+            <td data-label="type">김지현 (ID)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
 </body>
+
 </html>

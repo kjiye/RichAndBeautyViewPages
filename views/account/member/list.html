@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +11,10 @@
 
     <script type="text/javascript" src="../../../public/scripts/lib/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="../../../public/scripts/lib/semantic.min.js"></script>
-    
+
     <script type="text/javascript" src="../../../public/scripts/common.js"></script>
 </head>
+
 <body>
     <header id="header" include-html="/views/header.html"></header>
     <nav id="snb" include-html="/views/nav.html"></nav>
@@ -28,10 +30,10 @@
                 <i class="dropdown icon"></i>
                 <div class="default text">상태</div>
                 <div class="menu">
-                  <div class="item" data-value="0">정상</div>
-                  <div class="item" data-value="1">이용정지</div>
-                  <div class="item" data-value="2">휴면</div>
-                  <div class="item" data-value="3">탈퇴</div>
+                    <div class="item" data-value="0">정상</div>
+                    <div class="item" data-value="1">이용정지</div>
+                    <div class="item" data-value="2">휴면</div>
+                    <div class="item" data-value="3">탈퇴</div>
                 </div>
             </div>
             <div class="ui selection dropdown">
@@ -39,8 +41,8 @@
                 <i class="dropdown icon"></i>
                 <div class="default text">회원 구분</div>
                 <div class="menu">
-                  <div class="item" data-value="0">가입</div>
-                  <div class="item" data-value="1">회원</div>
+                    <div class="item" data-value="0">가입</div>
+                    <div class="item" data-value="1">회원</div>
                 </div>
             </div>
             <div class="right_floated">
@@ -48,15 +50,15 @@
                     <i class="filter icon"></i>
                     <span class="text">검색 필터</span>
                     <div class="menu">
-                      <div class="item">전체</div>
-                      <div class="item">회원명</div>
-                      <div class="item">전화번호</div>
+                        <div class="item">전체</div>
+                        <div class="item">회원명</div>
+                        <div class="item">전화번호</div>
                     </div>
                 </div>
                 <div class="ui action input">
                     <input type="text" placeholder="Keyword">
                     <button class="ui icon blue button">
-                      <i class="search icon"></i>
+                        <i class="search icon"></i>
                     </button>
                 </div>
             </div>
@@ -64,48 +66,48 @@
 
         <table class="ui celled padded table list">
             <thead>
-            <tr>
-              <th class="single line">가입일시</th>
-              <th>회원명</th>
-              <th>전화번호</th>
-              <th>나이</th>
-              <th>구분</th>
-              <th>인증/심사요청</th>
-              <th>상태</th>
-              <th>누적 신고 횟수</th>
-              <th>최근 접속일시</th>
-              <th>상세정보</th>
-            </tr>
+                <tr>
+                    <th class="single line">가입일시</th>
+                    <th>회원명</th>
+                    <th>전화번호</th>
+                    <th>나이</th>
+                    <th>구분</th>
+                    <th>인증/심사요청</th>
+                    <th>상태</th>
+                    <th>누적 신고 횟수</th>
+                    <th>최근 접속일시</th>
+                    <th>상세정보</th>
+                </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>2022.01.23 13:13:10</td>
-                <td class="sky_blue">홍길동<br>(닉네임)</td>
-                <td>010-1111-1111</td>
-                <td>22</td>
-                <td>가입</td>
-                <td>대기</td>
-                <td>정상</td>
-                <td>9</td>
-                <td>2022.03.02 16:12:10</td>
-                <td>
-                    <a href="../../../views/account/member/detail.html" class="ui green tiny inverted button">보기</a>
-                </td>
-              </tr>
-              <tr>
-                <td>2022.01.23 13:13:10</td>
-                <td class="light_red">아무개<br>(닉네임)</td>
-                <td>010-1234-1111</td>
-                <td>24</td>
-                <td>회원</td>
-                <td>승인</td>
-                <td>휴면</td>
-                <td>0</td>
-                <td>2022.03.02 16:12:10</td>
-                <td>
-                    <a href="../../../views/account/member/detail.html" class="ui green tiny inverted button">보기</a>
-                </td>
-              </tr>
+                <tr>
+                    <td>2022.01.23 13:13:10</td>
+                    <td class="sky_blue">홍길동<br>(닉네임)</td>
+                    <td>010-1111-1111</td>
+                    <td>22</td>
+                    <td>가입</td>
+                    <td>대기</td>
+                    <td>정상</td>
+                    <td>9</td>
+                    <td>2022.03.02 16:12:10</td>
+                    <td>
+                        <a href="../../../views/account/member/detail.html" class="ui green tiny inverted button">보기</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2022.01.23 13:13:10</td>
+                    <td class="light_red">아무개<br>(닉네임)</td>
+                    <td>010-1234-1111</td>
+                    <td>24</td>
+                    <td>회원</td>
+                    <td>승인</td>
+                    <td>휴면</td>
+                    <td>0</td>
+                    <td>2022.03.02 16:12:10</td>
+                    <td>
+                        <a href="../../../views/account/member/detail.html" class="ui green tiny inverted button">보기</a>
+                    </td>
+                </tr>
             </tbody>
             <!-- pagination -->
             <tfoot>
@@ -126,13 +128,14 @@
                     </th>
                 </tr>
             </tfoot>
-          </table>
+        </table>
 
     </div>
-    
+
 </body>
 <script>
     $("#header").load("../../../views/header.html");
-    $("#snb").load("../../../views/nav.html"); 
+    $("#snb").load("../../../views/nav.html");
 </script>
+
 </html>
