@@ -4,7 +4,7 @@ li { list-style:none; }
 a { text-decoration:none;cursor:pointer; }
 i { font-style:normal; }
 
-body { background: url('/public/images/bg.png')!important; }
+body { background: url('../../public/images/bg.png')!important; }
 
 /* semantic UI 기본 속성 제거 */
 .clear_margin { margin: 0!important; }
