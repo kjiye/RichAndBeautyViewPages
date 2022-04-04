@@ -55,7 +55,8 @@ const Forbidden = (function ($) {
             $('#add').on('click', addModal);
             $('button.modify').on('click', modifyModal);
             $('input.category_check').on('change', categoryCheckOneAction);
-        }
+        },
+        categoryCheckAllAction : () => categoryCheckAllAction(),
     }
 }(jQuery));
 
